@@ -134,6 +134,7 @@ Header
 .tt-nav.sticky .header-sticky,
 .tt-nav.transparent-header {
     position: fixed;
+    margin: 0px;
     width: 100%;
 }
 
@@ -146,16 +147,14 @@ Header
 }
 
 .tt-nav.sticky{
-    height: 30px;
     z-index: 1000;
     position: fixed;
     top:0px;
 }
 
 
-
 .tt-nav .logo-brand img {
-    height: 40px;
+    height: 33px;
     float: left;
 }
 
@@ -844,40 +843,55 @@ Responsive Menu
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .tt-nav .container {
-        width: 100%;
-    }
     .logo-brand {
-        margin: 23px 0 0 0;
+        margin: 33px 0 0 0;
     }
-
+    .logo-brand img{
+        display: none;
+    }
     .menuzord-menu>li>a, 
     .tt-nav.sticky .menuzord-menu>li>a {
         padding: 0 5px;
     }
-
+    .menuzord{
+        display: flex;
+       
+    }
     .menuzord-menu>li>a {
         font-size: 14px;
     }
 }
-
+/* Medium and Large Screen */
+@media (min-width: 768px){
+    .page-title h4 {
+        margin-bottom: .75rem;
+        margin-left: 6px;
+        font-size: 18px;
+    }
+   
+}
   
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+   
 
     .tt-nav {
         top:0;
     }
-    .menuzord-responsive.menuzord {
-        padding: 0
+    .menuzord-responsive .menuzord {
+        padding: 90px;
     }
     .menuzord-responsive .logo-brand {
-        margin: 5px 0 0;
+        margin: 8px 0 0;
         line-height: inherit;
     }
     .tt-nav.sticky .logo-brand {
-        margin: 8px 0 0;
+       margin-top: 7.5px;
     }
-
+    .tt-nav.sticky {
+       
+        
+        background-color: #777;
+    }
     .menuzord-responsive .showhide {
         margin: 0
     }
