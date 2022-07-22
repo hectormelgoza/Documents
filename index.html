@@ -35,9 +35,20 @@ function MM_swapImage(){var i,j=0,x,a=MM_swapImage.arguments;document.MM_sr=new 
 if((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x;if(!x.oSrc)x.oSrc=x.src;x.src=a[i+2];}}</script>
 
 <style type="text/css">
-h4{font-size:38px}
-body{margin:0;font-family:"Lucida Grande",Arial,sans-serif;font-size:small;background:#fff}
-#container{max-width:925px;margin:0 auto;background:#fff}#flash{width:925px;height:75px;background-color:#000;margin-top:5px;margin-bottom:5px}
+h4{
+	font-size:38px
+}
+body{
+	margin:0;
+	font-family:"Lucida Grande",Arial,sans-serif;
+	font-size:small;background:#fff
+}
+#container{
+	max-width:950px;
+	margin:0 auto;
+	background:#fff
+}
+#flash{width:925px;height:75px;background-color:#000;margin-top:5px;margin-bottom:5px}
 .grid{float:left;padding-right:12px;padding-bottom:10px}
 .last{text-decoration:none}a{color:#d11212;text-decoration:none;font-weight:bold}
 #sidebar{padding:5px 0px 0px 0px;color:#666;display:inline-block;max-width:275px;}
@@ -373,8 +384,8 @@ a:hover.redBtn-full {
 .sterile-banner{
 	background-color: #E9E9E9;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	text-align: center;
 	height: 90px;
 	margin-bottom: 2rem;display: none;
 }
@@ -384,6 +395,7 @@ a:hover.redBtn-full {
 	font-weight: 700;
 	font-size: 34px;
 	display: none;
+	text-align: center;
 }
 .sterile-banner-right{
 	background-color: #D32F2F;
@@ -400,6 +412,7 @@ a:hover.redBtn-full {
 	color:#FFFFFF;
 }
 .sterile-banner-right .sterile-call-btn{
+	
 	color: #D32F2F;
 }
 .sterile-banner-right .sterile-call-btn a:hover{
@@ -411,6 +424,7 @@ a:hover.redBtn-full {
 	background-color: #FFFFFF;
 	border-radius: 50px;
 	padding: .5rem 2rem;
+	font-size: 16px;
 }
 @media screen and (min-width:991px) {
     .products-display{
