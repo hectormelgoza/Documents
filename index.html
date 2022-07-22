@@ -315,50 +315,7 @@ text-align: center;
 .fa-iconRight {margin-top:20px;}
 .fa-title {width:75%;}}
 
-#sbp-banner {
-    margin-bottom: 10px;
-}
-
-#sbp-leftColumn {
-    width: 65%;
-    height: 90px;
-    background-color: #e9e9e9;
-    text-align: center;
-    float: left;
-}
-
-#sbp-leftColumn h1 {
-    font-size: 40px;
-		line-height: 33px;
-    color: #d70000;
-		margin-top: 28px;
-}
-
-#sbp-btn a {
-    background-color: #fff;
-    width: 150px;
-    padding: 3px 10px;
-    border-radius: 20px;
-}
-#sbp-rightColumn {
-    width: 35%;
-    height: 90px;
-    display: inline-block;
-    background-color: #d40000;
-    text-align: center;
-}
-#sbp-rightColumn h1 {
-    color: #fff;
-	margin: 14px auto;
-}
-@media screen and (max-width:728px){
-#sbp-leftColumn h1 {font-size:24px;margin-top: 20px;}
-#sbp-rightColumn h1 {font-size:14px;}
-#sbp-banner h1 {line-height: 29px;}
-}
 @media screen and (max-width:500px){
-#sbp-btn a {font-size: 12px;}
-#sbp-banner h1 {line-height: 20px;}
 .redBtn-full {line-height: 24px !important;font-size:20px !important;}
 }
 .redBtn-full {
@@ -394,13 +351,86 @@ a:hover.redBtn-full {
     box-shadow: 0px 0px 10px 4px #888888;
     transition: .24s ease;
 }
+/* Products Banner End*/
 
+/* Sterile Banner Start */
+.sterile-banner-mobile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #E9E9E9;
+	height: 90px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.sterile-banner-mobile:hover, .sterile-btn:hover{
+	color: #fff!important;
+	background-color: #2d2d2d;
+	transition: .24s ease-in-out;
+}
+.sterile-banner{
+	background-color: #E9E9E9;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 90px;
+	margin-bottom: 2rem;display: none;
+}
+.sterile-banner-left{
+	width: 65%;
+	color: #D32F2F;
+	font-weight: 700;
+	font-size: 34px;
+	display: none;
+}
+.sterile-banner-right{
+	background-color: #D32F2F;
+	width: 35%;
+	height: 90px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	display: none;
+}
+.sterile-banner-right .sterile-call-header{
+	font-size: 24px;
+	color:#FFFFFF;
+}
+.sterile-banner-right .sterile-call-btn{
+	color: #D32F2F;
+}
+.sterile-banner-right .sterile-call-btn a:hover{
+	color: #fff;
+	height: 90px;
+	background-color: #2d2d2d;
+}
+.sterile-banner-right .sterile-call-btn a{
+	background-color: #FFFFFF;
+	border-radius: 50px;
+	padding: .5rem 2rem;
+}
 @media screen and (min-width:991px) {
     .products-display{
         flex-direction: row;
     }
+	.sterile-banner-left{
+		display: block;
+		
+	}
+	.sterile-banner-mobile{
+		display: none;
+	}
+	.sterile-banner-right{
+		display: flex;
+	}
+	.sterile-banner{
+		display: flex;
+	}
 }
-/* Products Banner End*/
+/* Sterile Banner End */
 
 </style>
 
@@ -515,16 +545,25 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	
 <p><a class="redBtn-full" href="https://www.sorbentsystems.com/a-note-from-impak-about-covid19.html">A Note From IMPAK About COVID-19</a></p>
 
-<div id="sbp-banner">
-<div id="sbp-leftColumn">
-<h1>STERILE BARRIER POUCHES</h1>
-</div>
+<a class="sterile-btn" href="https://www.sorbentsystems.com/sterile-pouches.html">
+	<div class="sterile-banner-mobile">
+		STERILE BARRIER POUCHES
+	</div>
+</a>
 
-<div id="sbp-rightColumn">
-<h1>READY FOR USE</h1>
-
-<div id="sbp-btn"><a href="https://www.sorbentsystems.com/sterile-pouches.html">Learn More</a></div>
-</div>
+<div class="sterile-banner">
+	<div class="sterile-banner-left">
+		STERILE BARRIER POUCHES
+	</div>
+	
+	<div class="sterile-banner-right">
+		<div class="sterile-call-header">
+			READY FOR USE
+		</div>
+		<div class="sterile-call-btn">
+			<a>Sterile Barrier Pouches</a>
+		</div>
+	</div>
 </div>
 
 <div class="fix-anything">
