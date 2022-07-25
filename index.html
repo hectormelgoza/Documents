@@ -38,8 +38,8 @@ if((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x;if(!x.oSrc)x.oSrc=x.src;x.s
 	h1{
 		padding-top: 2rem;
 	}
-@media screen and (max-width: 970px){
-	#posts{
+@media screen and (max-width: 990px){
+	#posts, .bottom-grid-container{
 		width: 87%;
 		margin: auto
 	}
@@ -58,9 +58,12 @@ body{
 	background:#fff;
 }
 #flash{width:925px;height:75px;background-color:#000;margin-top:5px;margin-bottom:5px}
-.grid{float:left;padding-right:12px;padding-bottom:10px}
+/* .grid{float:left;padding-right:12px;padding-bottom:10px} */
 .last{text-decoration:none}a{color:#d11212;text-decoration:none;font-weight:bold}
-#sidebar{padding:5px 0px 0px 0px;color:#666;display:inline-block;max-width:275px;}
+#sidebar{
+	width: 40%;
+	margin: auto;
+	}
 #sidebar-lower{margin:0px 0px 0px 630px;padding:0px 0px 0px 0px;color:#666}
 .sidebar-module{margin:0px 0px 0px 0px;padding:0px 0px 30px 0px;background-color:transparent;}
 .sidebar-module1{margin:0px 0px 0px 0px;padding:0px 0px 30px 0px;background-color:transparent}
@@ -511,6 +514,130 @@ a:hover.redBtn-full {
 }
 /* We Can Fix Anything Banner End*/
 
+/* Bottom Grid Start */
+.bottom-grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 1rem;
+	
+}
+.bottom-grid a:hover{
+	text-decoration: none;
+}
+.bottom-grid-item{
+	margin-bottom: 2rem;
+}
+.bottom-grid-item:hover{
+	box-shadow: 0px 0px 10px 4px #888888;
+    transition: .24s ease;
+}
+.useful-links-container{
+	display: flex;
+	flex-direction: column;
+}
+.pallet-pak-img{
+	background-image: url(bottom-grid-pics/pallet-pak.PNG);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.explosion-proof-img{
+	background-image: url(bottom-grid-pics/explosion-proof.PNG);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.hops-guide-img{
+	background-image: url(bottom-grid-pics/hops-guide.PNG);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.child-resistant-img{
+	background-image: url(images/child-proof-pouches_group.jpg);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.unique-high-volume-img{
+	background-image: url(bottom-grid-pics/unique-high-volume.PNG);
+	background-size: cover;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.production-over-runs-img{
+	background-color: #DAD8D9;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.pallet-pak-img p,
+.explosion-proof-img p,
+.hops-guide-img p,
+.child-resistant-img p,
+.unique-high-volume-img p,
+.production-over-runs-img p
+{
+	background-color: #26262c5b;
+	font-size: 34px;
+	width: 100%;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+}
+.shop-odor-proof{
+	background-color: #019245;
+	color: white;
+	width: 250px;
+	height: 250px;
+	font-size: 34px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+.useful-links-header{
+	color: white;
+	text-align: center;
+	background-color: #32323a;
+}
+.useful-links-container a{
+	color: white;
+}
+.useful-links-container{
+	width: 250px;
+	max-height: 221px;
+	overflow: scroll;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #32323a;
+}
+/* Bottom Grid End */
 
 
 </style>
@@ -687,19 +814,21 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <h1>Mylar&reg; Bags, Sealers, Sorbents &amp; Desiccants</h1>
 
 <h3>What We Offer...</h3>
+
 <p>
-We provide <a href="https://www.sorbentsystems.com/mylar.html">flexible packaging materials</a> with <a href="https://www.sorbentsystems.com/stockziplock.html">reclosable features</a> and high
+	We provide <a href="https://www.sorbentsystems.com/mylar.html">flexible packaging materials</a> with <a href="https://www.sorbentsystems.com/stockziplock.html">reclosable features</a> and high
 <a href="https://www.sorbentsystems.com/technology.html">O<sub>2</sub> / H<sub>2</sub>O barrier</a> properties. Our temporary barrier <a href="https://www.sorbentsystems.com/bagclips.html">clips</a> are liquid impervious.
 </p>
+
 <p>
 Flexible materials are an ideal medium for heat sealing; <a href="https://www.sorbentsystems.com/impulsesealers.html">Tabletop</a> sealers produce 2.0, 2.7 and 5.0 mm seals. <a href="https://www.sorbentsystems.com/footsealer.html">Foot Pedal</a> units are available in 2.0, 2.7, 5.0 and even 10.0 mm wide units with Constant Heat sealing jaw options that will seal the heaviest foil materials. <a href="https://www.sorbentsystems.com/vacuum_sealers.html">Vacuum Sealing</a> is the most efficient way of minimizing the air volume in a package which must be dried, or deoxygenated.
 <a href="https://www.sorbentsystems.com/custom-heat-sealers.html">Custom Units</a> have been produced as wide as 51.0&quot;.
 </p>
 <p>
 We manufacture <a href="https://www.sorbentsystems.com/mylar.html">Mylar&reg; Bags, </a> and if you don't find exactly what you need here we welcome your inquiries
-for custom specifications and sizes or quantities. <em>MYLAR&reg; is manufactured by DuPont Teijin Films.</em>
-	
+for custom specifications and sizes or quantities. <em>MYLAR&reg; is manufactured by DuPont Teijin Films.</em>	
 </p>
+
 <p>
 Our <a href="o2absorbers.html">Oxygen Absorbers </a> come in a wide variety of sizes and quantities to suit all of your packaging and budgeting needs. These <a href="https://www.sorbentsystems.com/o2absorbers.html">Oxygen Absorbers </a> are held to the highest production and testing standards and are even approved for use by the U.S. Military.
 <br/>
@@ -717,74 +846,101 @@ We are a producer and provider of technical products made to specifications that
 <h3 class="style2">How to choose and evaluate the appropriate package for your product:</h3>
 <p> Introducing the IMPAK Corporation <a href="https://www.sorbentsystems.com/packagedesignguide.html">Package Design Guide</a>, a written document that works in conjunction with the Product Selection Kit, containing 29 different flexible packages and a review of their structures, styles, and applications; together they are an invaluable tool for any organization or individual engaged in evaluating and selecting the appropriate package for a product. </p>
 
-<hr/>
 <h3>Who We Are</h3>
 <p>SorbentSystems, the online presence of IMPAK Corporation (with locations in both Los Angeles, CA and Sebastian, FL), is a leader in providing complete packaging systems for products that are sensitive to specific aspects of their environment - whether it be humidity, ultraviolet light, oxygen, or trace gases. <a href="about.html">Learn More</a></p>
 </div>
 
+<div class="bottom-grid-container">
+	<div class="bottom-grid">
+		<div class="bottom-grid-item">
+			<a href="https://www.sorbentsystems.com/palletpak.html">
+				<div class="pallet-pak-img">
+					<p>PalletPak</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="forms/getstarted.html" target="_blank"><img src="images/getstarted-250.png" width="250px" alt="Get Started with Impak"/></a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="scentshield.html">
+				<div class="shop-odor-proof">
+					<p>Shop Odor-Proof Packaging</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="explosion-proof-sealers.html">
+				<div class="explosion-proof-img">
+					<p>Need an Explosion Proof Sealer?</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="mylar-bag-for-hop-storage.html">
+				<div class="hops-guide-img">
+					<p>Hops Packaging Guide</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="child-resistant-pouches.html">
+				<div class="child-resistant-img">
+					<p>New Child Resistant Pouches</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="promotion.html">
+				<div class="unique-high-volume-img">
+					<p>Unique High Volume Productions</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="bottom-grid-item">
+			<div class="useful-links-header">
+				Useful Links
+			</div>
+			<div class="useful-links-container">
+				<a href="vacuumsealingbenefits.html">&#187; What can a vacuum sealer do for you?</a>
+
+				<a href="refurbisheditems.html">&#187; Refurbished Equipment</a>
+				
+				<a href="goinggreen.html">&#187; IMPAK's Environmental Position</a>
+				
+				<a href="longtermfoodstorage.html">&#187; Long Term Food Storage</a>
+				
+				<a href="customerletter.html">&#187; Number 10 Cans or Mylar&reg; Bags?</a>
+				
+				<a href="flexprin.html" target="_blank">&#187; Need Custom Printed bags?</a>
+				
+				<a href="portable-sealers.html">&#187; See Our Portable Sealers</a>
+				
+				<a href="productsinaction_flexiblepackaging.html">&#187; Check Out What We Have Done!</a>
+				
+				<a href="customshapepouches.html">&#187; Uniquely Shaped Pouches</a>
+				
+				<a href="how_to_choose_the_best_vacuum_sealer.html">&#187; Choose the Best Vacuum Sealer</a>
+			</div>
+		</div>
+
+		<div class="bottom-grid-item">
+			<a href="overruns.html">
+				<div class="production-over-runs-img">
+					<p>Production Over-Runs</p>
+				</div>
+			</a>
+		</div>
+	</div>
 </div>
 
-<br/>
-<br/>
-<div id="sidebar">
-<div class="sidebar-module">
-<fieldset style="width: 230px;">
-	<a href="https://www.sorbentsystems.com/palletpak.html"><img src="images-m/palletpak-banner-SSC.jpg" width="250px" alt="PalletPak Gaylord Liner"  /></a><br /><hr />
-	<a href="forms/getstarted.html" target="_blank"><img src="images/getstarted-250.png" width="250px" alt="Get Started with Impak"  /></a><br /><hr />
-	<a href="scentshield.html"><img src="images-m/odor-proof-packaging-ad.jpg" width="250px" alt="cannabis packaging" />	</a><br /><hr />
-	<a href="explosion-proof-sealers.html"><img src="images-m/explosion-proof-square.jpg" width="250px" alt="explosion proof sealers" /></a><br /><hr />
-	<a href="mylar-bag-for-hop-storage.html"><img src="images/hops-packaging-guide.jpg" width="250px" alt="hops packaging guide" />	</a><br /><hr />
-	
-<center>
-<a href="child-resistant-pouches.html"><img src="images/child-proof-pouches_group.jpg" alt="child resistant pouches" width="250" /></a>
-<h3><strong>New Child Resistant Pouches</strong></h3>
-<p>Easy for You - Tough for Tots</p>
-	<p>Click <a href="child-resistant-pouches.html">here</a> for more information</p></center>
-<hr />
-
-<a href="promotion.html"><img src="images/discount-standup-pouches.jpg" alt="discount standup pouches promotion" width="250"></a>
-	
-
-
-<!--<a href="promotion.html"><img src="images/test-run-dbb035z.jpg" width="250"></a>-->
-
-<!--<a href="sealers_overview.html"><img border="0" src="https://www.sorbentsystems.com/images/made-in-ca.jpg" /></a>
-<hr />
-<a href="samplerequest.html"><img border="0" src="https://www.sorbentsystems.com/images/printedpakdry7500.jpg" width="200" /><br />
-<p>Ask for a sample of a printed PAKDRY7500 bag</p></a> </center>-->
-<hr />
-<h3>Useful Links</h3>
-<a href="vacuumsealingbenefits.html">&#187; What can a vacuum sealer do for you?</a>
-<br/>
-<a href="refurbisheditems.html">&#187; Refurbished Equipment</a>
-<br />
-<a href="goinggreen.html">&#187; IMPAK's Environmental Position</a>
-<br/>
-<a href="longtermfoodstorage.html">&#187; Long Term Food Storage</a>
-<br />
-<a href="customerletter.html">&#187; Number 10 Cans or Mylar&reg; Bags?</a>
-<br />
-<a href="flexprin.html" target="_blank">&#187; Need Custom Printed bags?</a>
-<br/>
-<a href="portable-sealers.html">&#187; See Our Portable Sealers</a>
-<br />
-<a href="productsinaction_flexiblepackaging.html">&#187; Check Out What We Have Done!</a>
-<br />
-<a href="customshapepouches.html">&#187; Uniquely Shaped Pouches</a>
-<br />
-<a href="how_to_choose_the_best_vacuum_sealer.html">&#187; Choose the Best Vacuum Sealer</a>
-<br />
-<!-- <a href="FlexiblePackageDesignGuide.pdf" target="_blank">&#187; <strong>*</strong>Flexible Packaging Guide</a><br />
-<strong>*This is a PDF File - 2.18 MB</strong><br/>
-If you have problems viewing PDF files, please right click the link and <i>"Save Target As"</i> to view on your computer. -->
-<hr />
-<a href="overruns.html"><img src="images/productionOverruns.jpg" alt="Specials" width="224" height="123" border="0"/></a>
-</fieldset>
-
-</div>
-<br/>
-</div>
-<br/>
 </div>
 <div>
 <div id="clear">
