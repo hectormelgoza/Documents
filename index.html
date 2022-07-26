@@ -43,6 +43,10 @@ if((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x;if(!x.oSrc)x.oSrc=x.src;x.s
 		width: 87%;
 		margin: auto
 	}
+	#searchBox{
+		width: 87%;
+		margin: auto
+	}
 }
 h4{
 	font-size:38px
@@ -57,30 +61,22 @@ body{
 	margin:0 auto;
 	background:#fff;
 }
-#flash{width:925px;height:75px;background-color:#000;margin-top:5px;margin-bottom:5px}
-/* .grid{float:left;padding-right:12px;padding-bottom:10px} */
-.last{text-decoration:none}a{color:#d11212;text-decoration:none;font-weight:bold}
-#sidebar{
-	width: 40%;
-	margin: auto;
-	}
-#sidebar-lower{margin:0px 0px 0px 630px;padding:0px 0px 0px 0px;color:#666}
-.sidebar-module{margin:0px 0px 0px 0px;padding:0px 0px 30px 0px;background-color:transparent;}
-.sidebar-module1{margin:0px 0px 0px 0px;padding:0px 0px 30px 0px;background-color:transparent}
-.sidebar-clear{margin:0px 0px 0px 0px;padding:0px 0px 30px 0px;background-color:transparent}
-.sidebar-module h3{margin:0px 0px 0px 0px;padding:5px 0px 6px 5px;background-color:transparent;color:#000}
-.sidebar-module1 h3{margin:0px 0px 0px 0px;padding:5px 0px 6px 5px;background-color:transparent;color:#000}
-.sidebar-module h4{padding:0px 5px 0px 5px;margin:0px 0px 0px 0px;line-height:14px}
-.sidebar-module p{margin:0px;padding:0px 5px 7px 5px;color:#000}
-.sidebar-module1 p{margin:0px;padding:0px 5px 7px 5px;color:#000}
-.sidebar-module p.first{margin:-4px 0px 0px 0px;padding:0px 5px 7px 5px;line-height:16px;color:#666}
-.sidebar-module p.date{float:none;margin:0px;padding:7px 5px 0px 5px;font-size:11px;font-weight:normal;color:#000;line-height:14px}
-.sidebar-module img{margin:0px 0px 0px 0px;padding:0px 2px 0px 2px}
+
 #posts{
 	display: block;
 }
-#clear{clear:both;margin:15px 0px 0px 0px}form{margin-top:0;margin-bottom:0}
-fieldset{border:1px solid #b5b5b5}legend{color:#000;font-weight:bold}
+.bottom-search-header{
+	padding: 7px 0px;
+	text-align: center;
+	font-size: 22px;
+}
+
+#searchBox{
+	height: 40px;
+	border: 2px solid #32323a;
+	display: block;
+	margin-bottom: 3rem;
+}
 .spacer{clear:both;height:10px}
 .spacertop{clear:both}
 .style2{color:#003;font-size:medium}
@@ -133,7 +129,7 @@ fieldset{border:1px solid #b5b5b5}legend{color:#000;font-weight:bold}
 
 .mainmenu a, .mainmenu a:visited {
 	display: block;
-font-family:Arial, Helvetica, sans-serif;font-size:0.8em;font-weight:bold;font-style:normal;text-decoration:underline;
+	font-family:Arial, Helvetica, sans-serif;font-size:0.8em;font-weight:bold;font-style:normal;text-decoration:underline;
 	color: #FFFFFF;
 	text-decoration: none;
 	padding: 1em 1em;
@@ -638,7 +634,6 @@ a:hover.redBtn-full {
 	padding: 7px 0px;
 }
 .useful-links-container{
-	
 	padding: 7px 20px;
 	background-color: #32323a;
 }
@@ -647,11 +642,6 @@ a:hover.redBtn-full {
 }
 /* Bottom Grid End */
 
-#searchBox{
-	background-color: #32323a;
-	width: 87%;
-	margin: auto;
-}
 </style>
 
 <script src="Scripts/AC_RunActiveContent.js.pagespeed.jm.gRjufLP3n3.js" type="text/javascript"></script>
@@ -953,13 +943,22 @@ We are a producer and provider of technical products made to specifications that
 	</div>
 </div>
 
+<div class="bottom-search-container">
+	<div class="bottom-search-header">
+		Didn't Find What You Were Looking For?
+	</div>
+
+	<div class="bottom-search-bar">
+		<input  type="text" placeholder="Search Our Site" id="searchBox"/>
+	</div>
+</div>
 
 </div> <!-- End of Container -->
 
-<fieldset>
-<legend>Didn't Find What You Were Looking For?</legend>
 
-<input id="searchBox" style="width: 100%" type="text" placeholder="Search Our Site" />
+<!-- <legend>Didn't Find What You Were Looking For?</legend> -->
+
+<!-- <input id="searchBox" type="text" placeholder="Search Our Site"/> -->
 
 <script>
    // create a settings object
@@ -972,7 +971,7 @@ We are a producer and provider of technical products made to specifications that
 </script>
 <script async src="https://js.sitesearch360.com/plugin/bundle/1672.js"></script>
 <script src="https://cdn.semknox.com/sitesearch360-v6.min.js"></script>	
-</fieldset>
+
 </div>
 </div>
 <!--FOOTER-->
