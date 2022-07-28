@@ -29,7 +29,7 @@
         <!-- Bootstrap -->
         <link href="https://www.sorbentsystems.com/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- shortcodes (headers and layout of header) -->
-        <!-- <link href="https://www.sorbentsystems.com/assets/css/shortcodes/shortcodes.css" rel="stylesheet"> -->
+        <link href="https://www.sorbentsystems.com/assets/css/shortcodes/shortcodes.css" rel="stylesheet">
         <!-- Style CSS (color for page) -->
         <link href="https://www.sorbentsystems.com/assets/style.css" rel="stylesheet">
 		<!--Flex Slider-->
@@ -38,7 +38,7 @@
   		<link href="https://www.sorbentsystems.com/assets/css-m/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
         <!-- Custom CSS -->  
         <link href="https://www.sorbentsystems.com/assets/css-m/custom.css" type="text/css" rel="stylesheet" media="screen,projection"> 
-
+		
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -55,10 +55,90 @@
 	  ga('create', 'UA-39408815-1', 'auto');
 	  ga('send', 'pageview');
 
-	</script>
-	<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
+		</script>
+		<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
 
-	<!-- <link rel="stylesheet" href="header.css"> -->
+		<style type="text/css">
+			.footer-container{
+				background-color: #32323A;
+				padding-left: 5%;
+				padding-right: 5%;
+				border-bottom: 2px solid white;
+				
+			}
+			.ftr{
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				margin: auto;
+				max-width: 1140px;
+				padding: 15px 0px;
+				border-bottom: 1px solid rgba(192, 192, 192, 0.514) ;
+				border-top: 1px solid rgba(192, 192, 192, 0.514) ;
+			}
+			.ftr-links{
+				display: flex;
+				flex-direction: column;
+				font-size: 20px;
+			}
+			.ftr-links > a, 
+			.ftr-address
+			{
+				color: white;
+				font-size: 14px;
+				font-weight: 300;
+			}
+			.ftr-header{
+				color: #D32F2F;
+				font-size: 16px;
+				font-weight: bold;
+				
+			}
+			.ftr-copyright,
+			.ftr-copyright > a,
+			.ftr-title{
+				font-size: 16px;
+				text-align: center;
+				color: white;
+				padding: 15px 0px;
+			}
+			@media screen and (max-width: 768px) {
+				.ftr{
+					flex-wrap: wrap;
+					justify-content: space-between;
+				}
+				.ftr-item{
+					min-width: 226px;
+					
+					
+				}
+				
+			}
+		</style>
+
+<script src="https://www.sorbentsystems.com/assets/js/jquery-2.1.3.min.js"></script>
+<script src="https://www.sorbentsystems.com/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.sorbentsystems.com/assets/materialize/js/materialize.min.js"></script>
+<script src="https://www.sorbentsystems.com/assets/js/menuzord.js"></script>
+<script src="https://www.sorbentsystems.com/assets/js/bootstrap-tabcollapse.min.js"></script>
+<script src="https://www.sorbentsystems.com/assets/js/jquery.easing.min.js"></script>
+<script src="https://www.sorbentsystems.com/assets/js/smoothscroll.min.js"></script>
+<script src="https://www.sorbentsystems.com/assets/js/scripts.js"></script>
+<script src="https://www.sorbentsystems.com/assets/flexSlider/jquery.flexslider-min.js"></script>
+
+
+
+<script>
+   // create a settings object
+   var ss360Config = {
+	  // your site id
+	  siteId: 'www.sorbentsystems.com',
+	  // a CSS selector that points to your search  box
+	  searchBoxSelector: '#searchBox',      
+   };
+</script>
+<script src="https://cdn.semknox.com/sitesearch360-v6.min.js"></script>  
+
 	</head>
 
     <body id="top" class="has-header-search">
@@ -92,7 +172,7 @@
                 <ul class="topbar-cta no-margin">
                   <li class="mr-20"> <a href="mailto:sales@sorbentsystems.com"><i class="material-icons mr-10">email</i>sales@sorbentsystems.com</a> </li>
                   <li class="white-text">
-					<a href="tel:310-715-6600"><i class="material-icons mr-10">call</i> <strong>(310) 715-6600</strong></a>
+					<a href="tel:3107156600"><i class="material-icons mr-10">call</i> <strong>(310) 715-6600</strong></a>
                   </li>
                 </ul>
               </div>
@@ -112,7 +192,7 @@
                     <div class="search-wrapper">
                         <div class="search-trigger pull-right">
                             <div class="search-btn"></div>
-                            <i class="material-icons">search</i>
+                            <i class="material-icons">&#xE8B6;</i>
                         </div>
 
                         <!-- Modal Search Form -->
@@ -135,12 +215,12 @@
 
                         <!--logo start-->
                         <a href="index.html" class="logo-brand">
-                           <img class="retina" src="/assets/logos/logo.png" alt=""/> 
+                           <img class="retina" src="assets/logos/logo.png" alt=""/> 
                         </a>
                         <!--logo end-->
 
                         <!--mega menu start-->
-                        <div class="menuzord-menu pull-right ">
+                        <ul class="menuzord-menu pull-right ">
                             <li><a href="index.html">Home</a></li>
                             
                             <li><a href="javascript:void(0)">Company</a>
@@ -186,7 +266,7 @@
                                 
                             </li>
 
-                        </div>
+                        </ul>
                         
 
                     </div>
@@ -753,157 +833,91 @@
 	</div>
 
 
-		</div><!--close container-->
+	</div><!--close container-->
 
         <hr>
 
         
-
-
-        
-
-
-        
-
-
-        
-
-
-        
-
-
-        
-
-
-        <footer class="footer footer-four">
-            <div class="primary-footer brand-bg text-center">
-                <div class="container">
-                  <div class="row"><h5 align="center" class="white-text"><br>Can't find what you're looking for?  Contact us for expert advice, sales and all your customer service needs.</h5></div>
-                  
-					
-               
-                 
-                  <a href="#top" class="page-scroll btn-floating btn-large red darken-2 back-top waves-effect waves-light tt-animate btt" data-section="#top">
-                    <i class="material-icons">&#xE316;</i>
-                  </a>
-				<!-- hide social icons
-                  <ul class="social-link tt-animate ltr mt-20">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                  </ul>
-					-->
-                  <hr class="mt-15">
-
-			  <br>
-                          
-                          <div class="row">
-
-                      <div class="col-md-3 col-sm-3 white-text" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Contact Us</strong></h5>
-                         <div style="line-height: 20px; padding-top: 5px;">
-                          13700 S. Broadway <br>
-                          Los Angeles, CA  90061 <br>
-                          sales@sorbentsystems.com <br>
-                          T: (310) 715-6600 <br>
-                          F: (310) 715-6606 <br>
-                          Hablamos Espa&#241;ol
-                         </div>
-                      </div>
-                      <!--<div class="col-md-3 col-sm-3">&nbsp;</div> -->
-                      <!-- /.col-md-4 -->
-                      
-                      
-                      <div class="col-md-3 col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Company</strong></h5>
-                        <div style="padding-bottom: 15px;">
-                          <a href="about.html">About Us</a> <br>
-                          <a href="terms_and_conditions.html">Terms and Conditions</a> <br>
-                          <a href="privacy_policy.html">Privacy Policy</a> <br>
-                          <a href="wcs.html">Will Call Policy</a> <br>
-                          <a href="site_map.html">Site Map</a>
-                        </div>
-                      </div>
-                      
-                      
-                     <div class="col-md-3 col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Ordering</strong></h5>
-                         <div style="padding-bottom: 15px;">
-                          <a href="samplerequest.html">Sample Request</a> <br>
-                          <a href="quoterequest.html">Quote Request</a> <br>
-                          <a href="#">Custom Order Request</a> <br>
-                          <a href="forms/customquote.php">Custom Print Request</a><br>
-                          <a href="orderform.html">Secure Order Form</a> 
-                         </div>
-                      </div>
-
-                      
-
-                      <div class="col-md-3  col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>More to Explore</strong></h5>
-                         <div style="padding-bottom: 15px;">
-                          <a href="technology.html">Material Specifications</a> <br>
-                          <a href="msds.html">MSDS Sheets</a> <br>
-                          <a href="pdf/Artwork%20Submission%20with%20tips%20for%20artwork%202012.pdf">Printing Guidelines</a> <br>
-                          <a href="videos.html">Videos</a><br>
-                          <a href="faq.html">FAQ</a> 
-						  </div>
-                      </div><!-- /.col-md-4 -->
-
-                    </div>
-
-                          
-                          
-                    <!--</div> /.col-md-12 -->
-                  <!--</div> /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.primary-footer -->
-
-            <div class="secondary-footer text-center" style="background-color: #d32f2f">
-                <span class="copy-text">COPYRIGHT &copy; 2017 &nbsp; | &nbsp;<a href="#">IMPAK CORP.</a> &nbsp; | &nbsp;  ALL RIGHTS RESERVED &nbsp; </span>
-            </div><!-- /.secondary-footer -->
-        </footer>
-
-
-        <!-- Preloader 
-        <div id="preloader">
-          <div class="preloader-position"> 
-            <img src="assets/img/logo-colored.png" alt="logo" >
-            <div class="progress">
-              <div class="indeterminate"></div>
-            </div>
-          </div>
-        </div>
-         End Preloader -->
-        
-
-        <!-- jQuery -->
-        <script src="https://www.sorbentsystems.com/assets/js/jquery-2.1.3.min.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/materialize/js/materialize.min.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/js/menuzord.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/js/bootstrap-tabcollapse.min.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/js/jquery.easing.min.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/js/smoothscroll.min.js"></script>
-        <script src="https://www.sorbentsystems.com/assets/js/scripts.js"></script>
-		<script src="https://www.sorbentsystems.com/assets/flexSlider/jquery.flexslider-min.js"></script>
 		
+<div class="footer-container">
+	
+
+	<div class="ftr-title">
+		Can't find what you're looking for? Contact us for expert advice, sales and all your customer service needs.
+	</div>
+
+	<div class="ftr">
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Contact Us
+			</div>
+			<div class="ftr-address">
+				13700 S. Broadway<br>
+				Los Angeles, CA 90061<br>
+				sales@sorbentsystems.com<br>
+				T: (310) 715-6600<br>
+				F: (310) 715-6600<br>
+				Hablamos Espa&#241;ol<br>
+			</div>
+		</div>
 		
-		
-		<script>
-		   // create a settings object
-		   var ss360Config = {
-			  // your site id
-			  siteId: 'www.sorbentsystems.com',
-			  // a CSS selector that points to your search  box
-			  searchBoxSelector: '#searchBox',      
-		   };
-		</script>
-		<script src="https://cdn.semknox.com/sitesearch360-v6.min.js"></script>  
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Company
+			</div>
+			<div class="ftr-links">
+				<a href="about.html">About Us</a>
+
+				<a href="terms_and_conditions.html">Terms and Conditions</a>
+
+				<a href="privacy_policy.html">Privacy Policy</a>
+
+				<a href="wcs.html">Will Call Policy</a>
+
+				<a href="site_map.html">Site Map</a>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Ordering
+			</div>
+			<div class="ftr-links">
+				<a href="samplerequest.html">Sample Request</a>
+
+				<a href="quoterequest.html">Quote Request</a>
+
+				<a href="#">Custom Order Request</a>
+
+				<a href="forms/customquote.php">Custom Print Request</a>
+
+				<a href="orderform.html">Secure Order Form</a>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				More to Explore
+			</div>
+			<div class="ftr-links">
+				<a href="technology.html">Material Specifications</a>
+
+				<a href="msds.html">MSDS Sheets</a>
+
+				<a href="pdf/Artwork%20Submission%20with%20tips%20for%20artwork%202012.pdf">Printing Guidelines</a>
+
+				<a href="videos.html">Videos</a>
+
+				<a href="faq.html">FAQ</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="ftr-copyright">
+		Copyright &copy; 2022 &nbsp; | &nbsp;<a href="https://www.impakcorporation.com/">Impak Corp.</a> &nbsp; | &nbsp;  All Rights Reserved &nbsp;
+	</div>
+</div>
+      
     </body>
   
 </html>
