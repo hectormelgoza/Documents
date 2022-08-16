@@ -3,7 +3,6 @@
                             <div class='search-btn'></div>
                             <i class="material-icons">&#xE8B6;</i>
                         </div>
-
                         <!-- Modal Search Form -->
                         <i class="search-close material-icons">&#xE5CD;</i>
                         <div class="search-form-wrapper">
@@ -134,7 +133,6 @@ Header
 .tt-nav.sticky .header-sticky,
 .tt-nav.transparent-header {
     position: fixed;
-    margin: 0px;
     width: 100%;
 }
 
@@ -147,15 +145,63 @@ Header
 }
 
 .tt-nav.sticky{
+    height: 30px;
     z-index: 1000;
     position: fixed;
     top:0px;
 }
 
 
+
 .tt-nav .logo-brand img {
-    height: 33px;
+    position: absolute;
+    height: 40px;
+    
     float: left;
+}
+@media  (max-width: 1200px) {
+    .tt-nav .logo-brand img{
+        height: 35px;
+        
+    } 
+}
+
+@media  (min-width: 768px) and (max-width: 991px) {
+    .tt-nav .logo-brand img{
+        height: 28px;
+        top: 36px
+    } 
+    .tt-nav.sticky .logo-brand img{
+        top: 16px;
+        height: 20px;
+        
+    }
+    .menuzord-menu .home{
+        display: none;
+    }
+}
+@media  (min-width: 797px) and (max-width: 991px) {
+    .tt-nav .logo-brand img{
+        height: 28px;
+        top: 36px;
+        margin-left: 3%;
+    } 
+    .menuzord-menu .home{
+        display: block;
+    }
+  
+}
+@media  (min-width: 768px) and (max-width: 815px) {
+    .menuzord-menu .home{
+        display: none;
+    }
+  
+}
+@media  (max-width: 768px) {
+    .tt-nav.sticky .search-trigger{
+        position: absolute;
+        top: -6px
+    }
 }
 
 .tt-nav.sticky .logo-brand img, 
@@ -300,19 +346,9 @@ header.sticky .menuzord-menu>li>a,
 .menuzord-menu.scrollable>.scrollable-fix {
     display: none
 }
-.logo-brand {
-    float: left;
-    color: #999;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 33px 20px 0 0;
-    
-}
+
 .tt-nav.sticky .logo-brand {
     margin: 15px 30px 0 0;
-    line-height: 60px;
 }
 
 .menuzord-menu {
@@ -843,55 +879,41 @@ Responsive Menu
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .tt-nav .container {
+        width: 100%;
+    }
     .logo-brand {
-        margin: 33px 0 0 0;
+        margin: 23px 0 0 0;
     }
-    .logo-brand img{
-        display: none;
-    }
+
     .menuzord-menu>li>a, 
     .tt-nav.sticky .menuzord-menu>li>a {
         padding: 0 5px;
     }
-    .menuzord{
-        display: flex;
-       
-    }
+
     .menuzord-menu>li>a {
         font-size: 14px;
     }
+    
 }
-/* Medium and Large Screen */
-@media (min-width: 768px){
-    .page-title h4 {
-        margin-bottom: .75rem;
-        margin-left: 6px;
-        font-size: 18px;
-    }
-   
-}
+
   
-@media (max-width: 768px) {
-   
+@media screen and (max-width: 768px) {
 
     .tt-nav {
         top:0;
     }
-    .menuzord-responsive .menuzord {
-        padding: 90px;
+    .menuzord-responsive.menuzord {
+        padding: 0
     }
     .menuzord-responsive .logo-brand {
-        margin: 8px 0 0;
+        margin: 5px 0 0;
         line-height: inherit;
     }
     .tt-nav.sticky .logo-brand {
-       margin-top: 7.5px;
+        margin: 8px 0 0;
     }
-    .tt-nav.sticky {
-       
-        
-        background-color: #777;
-    }
+
     .menuzord-responsive .showhide {
         margin: 0
     }
