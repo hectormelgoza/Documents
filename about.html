@@ -58,7 +58,62 @@
 
     
     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
-    
+    <style type="text/css">
+			.footer-container{
+				background-color: #32323A;
+				padding-left: 8.5%;
+				padding-right: 8.5%;
+			}
+			.ftr{
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				margin: auto;
+				max-width: 1140px;
+				padding: 15px 0px;
+				border-bottom: 1px solid rgba(192, 192, 192, 0.514) ;
+				border-top: 1px solid rgba(192, 192, 192, 0.514) ;
+			}
+			.ftr-links{
+				display: flex;
+				flex-direction: column;
+				font-size: 20px;
+			}
+			.ftr-links > a, 
+			.ftr-address
+			{
+				color: white;
+				font-size: 14px;
+				font-weight: 300;
+			}
+			.ftr-header{
+				color: #D32F2F;
+				font-size: 16px;
+				font-weight: bold;
+				
+			}
+			.ftr-copyright,
+			.ftr-copyright > a,
+			.ftr-title{
+				font-size: 16px;
+				text-align: center;
+				color: white;
+				padding: 15px 0px;
+			}
+            
+			@media screen and (max-width: 768px) {
+				.ftr{
+					flex-wrap: wrap;
+					justify-content: space-between;
+				}
+				.ftr-item{
+					min-width: 226px;
+					
+					
+				}
+				
+			}
+		</style>
     </head>
 
     <body id="top" class="has-header-search">
@@ -121,7 +176,7 @@
                             <form action="#" class="white-form">
                                 <div class="input-field">
                                     <input type="text" name="search" id="searchBox">
-                                    <label for="search" class="">Search Here..</label>
+                                    <label for="search" class="">Search Here...</label>
                                 </div>
                                 <!-- <button class="btn red darken-2 search-button waves-effect waves-light" type="submit"><i class="material-icons">&#xE8B6;</i></button> -->
                                 
@@ -228,7 +283,7 @@
 	
 			<div class="row" style="padding-top: 15px">
       	
-			<img class="materialboxed responsive-img" src="images/impakbuilding.jpg" alt="impak building" />
+			<img class="materialboxed responsive-img" src="images/impakbuilding.jpg" alt="impak building" style="margin: 20px;" />
       	
 		</div>
 			
@@ -409,24 +464,7 @@
 				
 			</div><!--close section-->
       
-      <div class="row">
-           
-		  <h5 align="center">Interested in Learning More?</h5>
-            
-            <div class="col s12 m4">
-				<p align="center"><a class="btn btn red darken-2 waves-effect waves-light" href="goinggreen.html">Green Initiative</a></p>
-				</div>
-           
-           <div class="col s12 m4">
-			   <p align="center"><a class="btn btn red darken-2 waves-effect waves-light" href="markets.html">Markets</a></p>
-				</div>
-           
-           <div class="col s12 m4">
-			   <p align="center"><a class="btn btn red darken-2 waves-effect waves-light" href="success-stories.html">Success Stories</a></p>
-				</div>
-				
-			</div>
-			
+    
 		
 	
 	
@@ -487,8 +525,7 @@
 
         
 
-        <hr>
-
+        
         
 
 
@@ -507,98 +544,7 @@
         
 
 
-        <footer class="footer footer-four">
-            <div class="primary-footer brand-bg text-center">
-                <div class="container">
-                  <div class="row"><h5 align="center" class="white-text"><br>Can't find what you're looking for?  Contact us for expert advice, sales and all your customer service needs.</h5></div>
-                  
-					
-               
-                 
-                  <a href="#top" class="page-scroll btn-floating btn-large red darken-2 back-top waves-effect waves-light tt-animate btt" data-section="#top">
-                    <i class="material-icons">&#xE316;</i>
-                  </a>
-				<!-- hide social icons
-                  <ul class="social-link tt-animate ltr mt-20">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                  </ul>
-					-->
-                  <hr class="mt-15">
-
-			  <br>
-                          
-                          <div class="row">
-
-                      <div class="col-md-3 col-sm-3 white-text" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Contact Us</strong></h5>
-                         <div style="line-height: 20px; padding-top: 5px;">
-                          13700 S. Broadway <br>
-                          Los Angeles, CA  90061 <br>
-                          sales@sorbentsystems.com <br>
-                          T: (310) 715-6600 <br>
-                          F: (310) 715-6606 <br>
-                          Hablamos Espa&#241;ol
-                         </div>
-                      </div>
-                      <!--<div class="col-md-3 col-sm-3">&nbsp;</div> -->
-                      <!-- /.col-md-4 -->
-                      
-                      
-                      <div class="col-md-3 col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Company</strong></h5>
-                        <div style="padding-bottom: 15px;">
-                          <a href="about.html">About Us</a> <br>
-                          <a href="terms_and_conditions.html">Terms and Conditions</a> <br>
-                          <a href="privacy_policy.html">Privacy Policy</a> <br>
-                          <a href="wcs.html">Will Call Policy</a> <br>
-                          <a href="site_map.html">Site Map</a>
-                        </div>
-                      </div>
-                      
-                      
-                     <div class="col-md-3 col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Ordering</strong></h5>
-                         <div style="padding-bottom: 15px;">
-                          <a href="samplerequest.html">Sample Request</a> <br>
-                          <a href="quoterequest.html">Quote Request</a> <br>
-                          <a href="#">Custom Order Request</a> <br>
-                          <a href="forms/customquote.php">Custom Print Request</a><br>
-                          <a href="orderform.html">Secure Order Form</a> 
-                         </div>
-                      </div>
-
-                      
-
-                      <div class="col-md-3  col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>More to Explore</strong></h5>
-                         <div style="padding-bottom: 15px;">
-                          <a href="technology.html">Material Specifications</a> <br>
-                          <a href="msds.html">MSDS Sheets</a> <br>
-                          <a href="pdf/Artwork%20Submission%20with%20tips%20for%20artwork%202012.pdf">Printing Guidelines</a> <br>
-                          <a href="videos.html">Videos</a><br>
-                          <a href="faq.html">FAQ</a> 
-						  </div>
-                      </div><!-- /.col-md-4 -->
-
-                    </div>
-
-                          
-                          
-                    <!--</div> /.col-md-12 -->
-                  <!--</div> /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.primary-footer -->
-
-            <div class="secondary-footer text-center" style="background-color: #d32f2f">
-                <span class="copy-text">COPYRIGHT &copy; 2018 &nbsp; | &nbsp;<a href="#">IMPAK CORP.</a> &nbsp; | &nbsp;  ALL RIGHTS RESERVED &nbsp; </span>
-            </div><!-- /.secondary-footer -->
-        </footer>
+       
 
 
         <!-- Preloader 
@@ -636,6 +582,86 @@
 		</script>
 		<script src="https://cdn.semknox.com/sitesearch360-v6.min.js"></script>  
 		</div>
+
+<div class="footer-container">
+	
+
+	<div class="ftr-title">
+		Can't find what you're looking for? Contact us for expert advice, sales and all your customer service needs.
+	</div>
+
+	<div class="ftr">
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Contact Us
+			</div>
+			<div class="ftr-address">
+				13700 S. Broadway<br>
+				Los Angeles, CA 90061<br>
+				sales@sorbentsystems.com<br>
+				T: (310) 715-6600<br>
+				F: (310) 715-6600<br>
+				Hablamos Espa&#241;ol<br>
+			</div>
+		</div>
+		
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Company
+			</div>
+			<div class="ftr-links">
+				<a href="about.html">About Us</a>
+
+				<a href="terms_and_conditions.html">Terms and Conditions</a>
+
+				<a href="privacy_policy.html">Privacy Policy</a>
+
+				<a href="wcs.html">Will Call Policy</a>
+
+				<a href="site_map.html">Site Map</a>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Ordering
+			</div>
+			<div class="ftr-links">
+				<a href="samplerequest.html">Sample Request</a>
+
+				<a href="quoterequest.html">Quote Request</a>
+
+				<a href="#">Custom Order Request</a>
+
+				<a href="forms/customquote.php">Custom Print Request</a>
+
+				<a href="orderform.html">Secure Order Form</a>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				More to Explore
+			</div>
+			<div class="ftr-links">
+				<a href="technology.html">Material Specifications</a>
+
+				<a href="msds.html">MSDS Sheets</a>
+
+				<a href="pdf/Artwork%20Submission%20with%20tips%20for%20artwork%202012.pdf">Printing Guidelines</a>
+
+				<a href="videos.html">Videos</a>
+
+				<a href="faq.html">FAQ</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="ftr-copyright">
+		&copy; 2022 <a href="https://www.impakcorporation.com/">Impak Corp.</a> All rights reserved.
+	</div>
+</div>
+
 			</body>
   
 </html>
