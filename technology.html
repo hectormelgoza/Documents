@@ -59,6 +59,63 @@
     
     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
     
+    <style type="text/css">
+			.footer-container{
+				background-color: #32323A;
+				padding-left: 8.5%;
+				padding-right: 8.5%;
+			}
+			.ftr{
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				margin: auto;
+				max-width: 1140px;
+				padding: 15px 0px;
+				border-bottom: 1px solid rgba(192, 192, 192, 0.514) ;
+				border-top: 1px solid rgba(192, 192, 192, 0.514) ;
+			}
+			.ftr-links{
+				display: flex;
+				flex-direction: column;
+				font-size: 20px;
+			}
+			.ftr-links > a, 
+			.ftr-address
+			{
+				color: white;
+				font-size: 14px;
+				font-weight: 300;
+			}
+			.ftr-header{
+				color: #D32F2F;
+				font-size: 16px;
+				font-weight: bold;
+
+			}
+			.ftr-copyright,
+			.ftr-copyright > a,
+			.ftr-title{
+				font-size: 16px;
+				text-align: center;
+				color: white;
+				padding: 15px 0px;
+			}
+
+			@media screen and (max-width: 768px) {
+				.ftr{
+					flex-wrap: wrap;
+					justify-content: space-between;
+				}
+				.ftr-item{
+					min-width: 226px;
+
+
+				}
+
+			}
+		</style>
+
     </head>
 
     <body id="top" class="has-header-search">
@@ -69,25 +126,30 @@
             <div class="row">
               <!-- Social Icon -->
               <div class="col-md-6">
-                <!-- Social Icon 
+                <ul class="topbar-cta no-margin">
+                  <li class="mr-20"> <a href="https://www.sorbentsystems.com/samplerequest.html" target="_blank"><i class="material-icons mr-10">mode_comment</i>Sample Request</a> </li>
+                  <li>
+                    <a href="https://www.sorbentsystems.com/quoterequest.html" target="_blank"><i class="material-icons mr-10">mode_comment</i>Quote Request</a>
+                  </li>
+
+                </ul>
+                 <!--Social Icon
                 <ul class="list-inline social-top tt-animate btt">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#">Sample Request<i class="fa fa-wpforms"></i></a></li>
                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
                   <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                </ul> -->
+                </ul> --> 
               </div>
-
               <div class="col-md-6 text-right">
                 <ul class="topbar-cta no-margin">
-                  <li class="mr-20"> <a href="mailto:sales@sorbentsystems.com"><em class="material-icons mr-10"></em>sales@sorbentsystems.com</a> </li>
+                  <li class="mr-20"> <a href="mailto:sales@sorbentsystems.com"><i class="material-icons mr-10">email</i>sales@sorbentsystems.com</a> </li>
                   <li class="white-text">
-                   	<i class="material-icons mr-10">&#xE0CD;</i> (3d10) 715-6600
+					<a href="tel:3107156600"><i class="material-icons mr-10">call</i> <strong>(310) 715-6600</strong></a>
                   </li>
-                  
                 </ul>
               </div>
             </div><!-- /.row -->
@@ -129,7 +191,7 @@
 
                         <!--logo start-->
                         <a href="index.html" class="logo-brand">
-                           <img class="retina" src="assets/logos/logo.png" alt=""/> 
+                           <img class="retina" src="assets/logos/svg-logo-5.png" alt=""/> 
                         </a>
                         <!--logo end-->
 
@@ -593,64 +655,93 @@
 	
 	
 	
-	<!--<a name="contact"></a>
-	<div id="basic-form" class="section">
-              <div class="row">
-                <div class="col s12 m12 l12">
-					
-                  <div class="card-panel">
-                    <h3 align="center"><strong>Contact Us</strong></h3>
-                    
-					  <p align="center">Need more information? Looking to upgrade your existing equipment? Our team can connect you with an appropriate specialist to deliver the solution you need.</p>
-                    <div class="row">
-                      <form class="col s12">
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <input id="name" type="text">
-                            <label for="first_name">Name</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <input id="email" type="email">
-                            <label for="email">Email</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <input id="password" type="password">
-                            <label for="password">Phone</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <textarea id="message" class="materialize-textarea"></textarea>
-                            <label for="message">Message</label>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
-                                <i class="mdi-content-send right"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-               </div>
-            </div>-->
+
 	
 	
 	
-		
+		<div class="footer-container">
+
+
+	<div class="ftr-title">
+		Can't find what you're looking for? Contact us for expert advice, sales and all your customer service needs.
+	</div>
+
+	<div class="ftr">
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Contact Us
+			</div>
+			<div class="ftr-address">
+				13700 S. Broadway<br>
+				Los Angeles, CA 90061<br>
+				sales@sorbentsystems.com<br>
+				T: (310) 715-6600<br>
+				F: (310) 715-6600<br>
+				Hablamos Espa&#241;ol<br>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Company
+			</div>
+			<div class="ftr-links">
+				<a href="about.html">About Us</a>
+
+				<a href="terms_and_conditions.html">Terms and Conditions</a>
+
+				<a href="privacy_policy.html">Privacy Policy</a>
+
+				<a href="wcs.html">Will Call Policy</a>
+
+				<a href="site_map.html">Site Map</a>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				Ordering
+			</div>
+			<div class="ftr-links">
+				<a href="samplerequest.html">Sample Request</a>
+
+				<a href="quoterequest.html">Quote Request</a>
+
+				<a href="#">Custom Order Request</a>
+
+				<a href="forms/customquote.php">Custom Print Request</a>
+
+				<a href="orderform.html">Secure Order Form</a>
+			</div>
+		</div>
+
+		<div class="ftr-item">
+			<div class="ftr-header">
+				More to Explore
+			</div>
+			<div class="ftr-links">
+				<a href="technology.html">Material Specifications</a>
+
+				<a href="msds.html">MSDS Sheets</a>
+
+				<a href="pdf/Artwork%20Submission%20with%20tips%20for%20artwork%202012.pdf">Printing Guidelines</a>
+
+				<a href="videos.html">Videos</a>
+
+				<a href="faq.html">FAQ</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="ftr-copyright">
+		&copy; 2022 <a href="https://www.impakcorporation.com/">Impak Corp.</a> All rights reserved.
+	</div>
+</div>
 	
 
         
 
-        <hr>
-
+      
         
 
 
@@ -669,98 +760,7 @@
         
 
 
-        <footer class="footer footer-four">
-            <div class="primary-footer brand-bg text-center">
-                <div class="container">
-                  <div class="row"><h5 align="center" class="white-text"><br>Can't find what you're looking for?  Contact us for expert advice, sales and all your customer service needs.</h5></div>
-                  
-					
-               
-                 
-                  <a href="#top" class="page-scroll btn-floating btn-large red darken-2 back-top waves-effect waves-light tt-animate btt" data-section="#top">
-                    <i class="material-icons">&#xE316;</i>
-                  </a>
-				<!-- hide social icons
-                  <ul class="social-link tt-animate ltr mt-20">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                  </ul>
-					-->
-                  <hr class="mt-15">
-
-			  <br>
-                          
-                          <div class="row">
-
-                      <div class="col-md-3 col-sm-3 white-text" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Contact Us</strong></h5>
-                         <div style="line-height: 20px; padding-top: 5px;">
-                          13700 S. Broadway <br>
-                          Los Angeles, CA  90061 <br>
-                          sales@sorbentsystems.com <br>
-                          T: (310) 715-6600 <br>
-                          F: (310) 715-6606 <br>
-                          Hablamos Espa&#241;ol
-                         </div>
-                      </div>
-                      <!--<div class="col-md-3 col-sm-3">&nbsp;</div> -->
-                      <!-- /.col-md-4 -->
-                      
-                      
-                      <div class="col-md-3 col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Company</strong></h5>
-                        <div style="padding-bottom: 15px;">
-                          <a href="about.html">About Us</a> <br>
-                          <a href="terms_and_conditions.html">Terms and Conditions</a> <br>
-                          <a href="privacy_policy.html">Privacy Policy</a> <br>
-                          <a href="wcs.html">Will Call Policy</a> <br>
-                          <a href="site_map.html">Site Map</a>
-                        </div>
-                      </div>
-                      
-                      
-                     <div class="col-md-3 col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>Ordering</strong></h5>
-                         <div style="padding-bottom: 15px;">
-                          <a href="samplerequest.html">Sample Request</a> <br>
-                          <a href="quoterequest.html">Quote Request</a> <br>
-                          <a href="#">Custom Order Request</a> <br>
-                          <a href="forms/customquote.php">Custom Print Request</a><br>
-                          <a href="orderform.html">Secure Order Form</a> 
-                         </div>
-                      </div>
-
-                      
-
-                      <div class="col-md-3  col-sm-3" align="left">
-                        <h5 style="padding-top: 20px;" class="white-text"><strong>More to Explore</strong></h5>
-                         <div style="padding-bottom: 15px;">
-                          <a href="technology.html">Material Specifications</a> <br>
-                          <a href="msds.html">MSDS Sheets</a> <br>
-                          <a href="pdf/Artwork%20Submission%20with%20tips%20for%20artwork%202012.pdf">Printing Guidelines</a> <br>
-                          <a href="videos.html">Videos</a><br>
-                          <a href="faq.html">FAQ</a> 
-						  </div>
-                      </div><!-- /.col-md-4 -->
-
-                    </div>
-
-                          
-                          
-                    <!--</div> /.col-md-12 -->
-                  <!--</div> /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.primary-footer -->
-
-            <div class="secondary-footer text-center" style="background-color: #d32f2f">
-                <span class="copy-text">COPYRIGHT &copy; 2018 &nbsp; | &nbsp;<a href="#">IMPAK CORP.</a> &nbsp; | &nbsp;  ALL RIGHTS RESERVED &nbsp; </span>
-            </div><!-- /.secondary-footer -->
-        </footer>
+        
 
 
         <!-- Preloader 
