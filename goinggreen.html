@@ -59,7 +59,9 @@
 		<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
 
 		<style type="text/css">
-            
+            h2{
+                margin-bottom:3rem
+            }
             .solar-panel-section{
                 margin-bottom: 1rem;
             }
@@ -95,11 +97,18 @@
                     margin-bottom: 2.8rem;
                 }
             }
-
+            @media (min-width: 992px) {
+                .front-building-section {
+                    margin-bottom: 3.8rem;
+                }
+            }
             @media (min-width: 1200px) {
                 .front-building-section {
                     margin-bottom: 6.8rem;
                 }
+            }
+            @media (min-width: 992px) {
+                
             }
 			.footer-container{
 				background-color: #32323A;
@@ -388,7 +397,7 @@
 			<h2>Reducing Energy Demands</h2>
             <img src="images/frontbuildingshot.png" alt="building entrance"> 
 
-            <p>There are 16 light fixtures at the entrance of our building. When we first moved in a few years ago, 
+            <p class="reducing-energy-demands-para">There are 16 light fixtures at the entrance of our building. When we first moved in a few years ago, 
                 these light bulbs stayed on all night on a timer which the previous owner had set. We immediately noticed how wasteful 
 				this light energy consumption was. The first step we took was to replace the light bulbs with CFL's, 
                 then we reduced the number of lights from 16 to 6 while maintaining the aesthetics and safety of the area by carefully 
