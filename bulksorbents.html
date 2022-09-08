@@ -149,6 +149,17 @@
   input[type=checkbox]:checked ~ .absorber-guide-table {
     display: block
   }
+  .mesh-images-scaled{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 550px){
+    .mesh-images-scaled{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
 </style>
 
 	</head>
@@ -1221,7 +1232,18 @@
         sieve turns from blue to beige
       </p>
 
-      <h3>Available in 1 lb, 5 lb and 55 lb</h3>
+      <h3 style="text-align: center;">Available in 1 lb, 5 lb and 55 lb</h3>
+      <div class="mesh-images-scaled">
+        <div>
+          <img style=" width: 200px; height: 200px; margin-bottom: 2rem; " class="responsive-img" src="images/4x8-mesh-molecular-sieve.PNG" alt="4 x 8 mesh of molecular sieve">
+          <p style="text-align: center; margin-top: -20px;">(4 x 8 mesh)</p>
+        </div>
+        <div >
+          <img style="width: 200px; height: 200px;margin-bottom: 2rem; " src="images/8x12-mesh-molecular-sieve.PNG" alt="4 x 8 mesh of molecular sieve">
+          <p style="text-align: center; margin-top: -20px;">(8 x 12 mesh)</p>
+        </div>
+      </div>
+      
       <div class="table-style">		  
         <table class="table">
           <thead>
