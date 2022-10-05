@@ -62,56 +62,6 @@
 	<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
  
 <style>
-  .footer-container{
-    background-color: #32323A;
-    padding-left: 8.5%;
-    padding-right: 8.5%;
-  }
-  .ftr{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 1140px;
-    padding: 15px 0px;
-    border-bottom: 1px solid rgba(192, 192, 192, 0.514) ;
-    border-top: 1px solid rgba(192, 192, 192, 0.514) ;
-  }
-  .ftr-links{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-  }
-  .ftr-links > a, 
-  .ftr-address
-  {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .ftr-header{
-    color: #D32F2F;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .ftr-copyright,
-  .ftr-copyright > a,
-  .ftr-title{
-    font-size: 16px;
-    text-align: center;
-    color: white;
-    padding: 15px 0px;
-  }
-  @media screen and (max-width: 768px) {
-    .ftr{
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .ftr-item{
-      min-width: 226px;
-    }
-  }
-  
   @media (min-width: 602px) and (max-width: 805px) {
     .container{
       width: 85%;
@@ -122,8 +72,9 @@
     .oxygen-absorber-top-image{
       width: 300px;
       display:flex;
-      padding-bottom: 2rem;
+      margin-bottom: 2rem;
       margin: auto;
+      border-radius: 5px;
     }
   }
 
@@ -133,7 +84,8 @@
       width: 300px;
       margin: auto;
       margin-right: 2rem;
-      padding-top: .7rem;
+      margin-top: .7rem;
+      border-radius: 5px;
     }
   }
   .dropdown{
@@ -268,30 +220,24 @@
 <!--header end--> 
 
 <!--page title start-->
-<section class="page-title ptb-50">
-      <div class="container">
-    <div class="row">
-          <div class="col-md-12">
-			  <h4>Oxygen Absorbers</h5>
-        <ol class="breadcrumb">
-              <li>Products</li>
-              <li><a href="desiccant_overview.html">Desiccants Overview</a></li>
-			  
-              <li class="active"><strong>Oxygen Absorbers</strong></li>
-            </ol>
-      </div>
-        </div>
+<div class="breadcrumb-container">
+  <div class="container">
+    <div class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="desiccant_overview.html">Sorbents</a></li>
+      <li class="breadcrumb-item">Oxygen Absorbers</li>
+    </div>
   </div>
-    </section>
+</div>
 <!--page title end-->
 
 <div class="container">
 
 	  
 	<h1 style="margin-top: 20px; text-align: center;">What are Oxygen Absorbers?</h1>
-    <img class="oxygen-absorber-top-image" src="images-m/oxygen-absorbers.jpg">
+    <img class="oxygen-absorber-top-image" src="images-m/oxygen-absorbers.webp">
 
-    <p style="padding-top: 0px; text-align: left;">
+    <p style="margin-top: 2rem; text-align: left;">
       Designed primarily to prolong the shelf life of food, oxygen absorbers prevent 
       the change of color in food products, stop oils in foods from becoming rancid, 
       and prevent the growth of oxygen-using aerobic microorganisms such as fungi.
@@ -1249,9 +1195,9 @@
 
 				<a href="quoterequest.html">Quote Request</a>
 
-				<a href="#">Custom Order Request</a>
+				<a href="custom-order-request.html">Custom Order Request</a>
 
-				<a href="forms/customquote.php">Custom Print Request</a>
+				<a href="custom-print-request.html">Custom Print Request</a>
 
 				<a href="orderform.html">Secure Order Form</a>
 			</div>
