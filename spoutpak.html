@@ -136,7 +136,31 @@
       .growler{
         display: flex;
         justify-content: space-evenly;
+        margin: 0rem 2rem;
       }
+      .spout-group-top-image{
+        float: left;
+      }
+
+      @media screen and (max-width: 700px) {
+        .growler-order{
+          margin: auto;
+          justify-content: center;
+          margin-top: 2rem;
+        }
+        .growler{
+          flex-direction: column;
+        }
+        .spout-group-top-image{
+          float: none;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+        
+        
+        
+      }
+      
       
       
     </style>
@@ -271,8 +295,10 @@
 <div class="container">
     <h1 style="margin: 2rem 0rem; text-align: center;">SpoutPak&trade;</h1>
     <h2 style="margin: 2rem 0rem; text-align: center;">Liquid Spout Bags</h2>
-
-    <img class="responsive-img" src="images-m/spoutpak-group.webp" style="border-radius: 5px; float: left; margin: 0rem 2rem .5rem 0rem;" alt="spoutpak bag" />
+    <div class="spout-group-top-image">
+      <img class="responsive-img" src="images-m/spoutpak-group.webp" style="border-radius: 5px; margin: 0rem 2rem .5rem 0rem;" alt="spoutpak bag" />
+    </div>
+    
 
     <p>The latest innovation in the continuing evolution and development of stand-up pouch and packaging technology is the integration of closures into the flexible package. IMPAK can produce low quantity high resolution printed SpoutPak pouches for early stage product testing and market development as well as high volume (250,000 + per shipment) production ready packages. A number of fitments are available, including 9, 16 and 23mm (approximately 3/8, 5/8 and 1.0 inch I.D. respectively.) <!--We have the capability to support customer investment in proprietary closures and the molds required to produce them. We are especially proud of our 1 gallon SpoutPak with an almost 1&quot; in diameter reclosable screw cap.--></p>
 			  
@@ -354,8 +380,10 @@
   </div><hr><br>
   <div style="border: 2px solid #D32F2F;  border-radius: 5px;">
     <h2 style="margin: 2rem 0rem; text-align: center;">18 Hour Growler</h2>
-    
-      <img style="float: left; max-width: 250px; border-radius: 5px; margin-right: 2rem; margin-left: 2rem;" src="https://www.impakcorporation.com/image/cache/data/SpoutPaks/FTSSP1G18HG-01-690x690.jpg" class="responsive-img" alt="18 Hour Growler" />
+    <div style="text-align: center;">
+      <img style=" max-width: 250px; border-radius: 5px; margin-right: 2rem; margin-left: 2rem; margin-bottom: 2rem;" src="https://www.impakcorporation.com/image/cache/data/SpoutPaks/FTSSP1G18HG-01-690x690.jpg" class="responsive-img" alt="18 Hour Growler" />
+    </div>
+      
 
     
     <div style="margin-right: 2rem; margin-left: 2rem;">IMPAK's 18 Hour Growler makes an excellent alternative to glass when glass is inconvenient or prohibited. 
@@ -2790,10 +2818,11 @@
   </div>
 
   <p style="text-align: center;">IMPAK has the ability to manufacture tamper evident spouts for any of our spout bags. The bags above were fitted with a tamper evident spout for Salsa.</p>
-	
-  <div style="text-align: center;">
+	<div style="text-align: center; margin: 2rem"><h2>Are you a <a href="small-startups.html">small startup</a> looking for success?</h2></div>
+  <div style="text-align: center; margin-bottom: 2rem;">
     <img class="materialboxed responsive-img" src="https://sorbentsystems.com/images/salsabag.jpg" alt="spout bag" style="border-radius: 5px;"/>
   </div>
+  
 			
 
 	
