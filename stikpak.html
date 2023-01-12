@@ -60,59 +60,77 @@
 
 	</script>
 	<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0065/0298.js" async="async"></script>
-
-<style>
-    .footer-container{
-        background-color: #32323A;
-        padding-left: 8.5%;
-        padding-right: 8.5%;
-    }
-    .ftr{
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        max-width: 1140px;
-        padding: 15px 0px;
-        border-bottom: 1px solid rgba(192, 192, 192, 0.514) ;
-        border-top: 1px solid rgba(192, 192, 192, 0.514) ;
-    }
-    .ftr-links{
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-    }
-    .ftr-links > a, 
-    .ftr-address
-    {
-        color: white;
-        font-size: 14px;
-        font-weight: 300;
-    }
-    .ftr-header{
-        color: #D32F2F;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .ftr-copyright,
-    .ftr-copyright > a,
-    .ftr-title{
-        font-size: 16px;
-        text-align: center;
-        color: white;
-        padding: 15px 0px;
-    }
-    @media screen and (max-width: 768px) {
-        .ftr{
-            flex-wrap: wrap;
-            justify-content: space-between;
+    <style>
+  
+        @media (min-width: 602px) and (max-width: 805px) {
+          .container{
+            width: 85%;
+          }
         }
-        .ftr-item{
-            min-width: 226px;
+      
+        @media screen and (max-width: 768px){
+          .oxygen-absorber-top-image{
+            width: 200px;
+            display:flex;
+            margin: auto;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+          }
         }
-    }
-</style>
-
+      
+        @media screen and (min-width: 768px){
+          .oxygen-absorber-top-image{
+            float: left;
+            width: 220px;
+            margin: auto;
+            margin-right: 2rem;
+            margin-top: .7rem;
+            border-radius: 5px;
+          }
+        }
+        .dropdown{
+          text-align: left;
+          padding-bottom: 2rem;
+        }
+        input[type=checkbox]{
+          display: none;
+        }
+        .absorber-guide-table{
+          display: none;
+        }
+        input[type=checkbox]:checked ~ .absorber-guide-table {
+          display: block
+        }
+        .mesh-images-scaled{
+          display: flex;
+          justify-content: space-evenly;
+        }
+        @media screen and (max-width: 550px){
+          .mesh-images-scaled{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+          }
+        }
+        .molecular-sieve-header{
+          padding: 0.5rem 0rem;
+          color: white;
+          font-size: 18px;
+          text-align: center;
+          background-color: rgb(150, 150, 150);
+          margin-bottom: 1rem;
+        }
+        
+        .molecular-sieve-header:hover{
+          cursor: pointer;
+          background-color: rgb(121, 121, 121);
+          box-shadow: 0px 0px 8px 2px rgb(189, 189, 189);
+          transition: .258s ease-in-out;
+        }
+        table{
+            border: 1px solid #CCCCCC;
+        }
+      </style>
 	</head>
 
 	<body id="top" class="has-header-search">
@@ -230,139 +248,69 @@
 <!--header end--> 
 
 <!--page title start-->
-<section class="page-title ptb-50">
-      <div class="container">
-    <div class="row">
-          <div class="col-md-12">
-			  <h4>Stick Pack Packaging</h4><h5>Sample Packets / Small Foil Bags</h5>
-        <ol class="breadcrumb">
-              <li>Products</li>
-              <li><a href="flexible_overview.html">Flexible Packaging</a></li>
-			  <li><a href="mylar.html">Flat Mylar Bags</a></li>
-			<li><a href="minipouches.html">MiniPouches</a></li>
-              <li class="active"><strong>StikPak</strong></li>
-            </ol>
-      </div>
-        </div>
+<div class="breadcrumb-container">
+  <div class="container">
+    <div class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="flexible_overview.html">Flexible Packaging</a></li>
+      <li class="breadcrumb-item"><a href="mylar.html">Mylar&#174; Bags</a></li>
+      <li class="breadcrumb-item"><a href="minipouches.html">MiniPouches&#8482;</a></li>
+      <li class="breadcrumb-item">StikPak&#8482;</li>
+    </div>
   </div>
-    </section>
+</div>
 <!--page title end-->
 
 <div class="container">
-      <div class="row" style="padding-top: 15px">
-		  
-		  <div class="col s12 m5">
-			  
-			  <img class="responsive-img" src="images-m/stikpak-square.jpg" alt="finseal bag" />
-			  
-		  </div>
-		  
-		  <div class="col s12 m7">
-			  
-			  <h1>StikPak&trade; Foil Packets</h1>
-			  
-			  <h2>Heat Seal Sample Packets / Foil Bags for Small Items</h2>
-			  
-			  <p>From single-serving food items such as honey and flavorings, to cosmetic samples and small medical items, StikPaks™ offer a convenient and simple format to package small items and portions. These small heat sealable pouches offer all the same great barrier protection of our other multi-layer foil packets, in a small size.
-</p>
-			  
-			  <p>The Stick Pouch gets its name from its narrow shape and is ideal for single-serving beverage mixes, such as coffees, teas and fruit drinks; condiments like mustard, ketchup, mayonnaise. Herbal supplements can also be found in these uniquely elegant stick packs. These pouches are also often used to package non-consumables like lotions, antibiotic ointments and skin treatments</p>
-			  
-		  </div>  
+    <h1 style="margin: 2rem 0rem; text-align: center;">StikPak™ Foil Packets</h1>
+    <h2 style="margin: 2rem 0rem; text-align: center;">Heat Seal Sample Packets / Foil Bags for Small Items</h2>
     
-	</div> 
+    <img class="responsive-img oxygen-absorber-top-image" src="images-m/stikpak-main.webp"  alt="finseal bag" />
+    <p >From single-serving food items such as honey and flavorings, 
+        to cosmetic samples and small medical items, StikPaks™ offer 
+        a convenient and simple format to package small items and portions. 
+        These small heat sealable pouches offer all the same great barrier 
+        protection of our other multi-layer foil packets, in a small size.<br><br>
+        The Stick Pouch gets its name from its narrow shape and is ideal for 
+        single-serving beverage mixes, such as coffees, teas and fruit drinks; 
+        condiments like mustard, ketchup, mayonnaise. Herbal supplements can 
+        also be found in these uniquely elegant stick packs. These pouches are 
+        also often used to package non-consumables like lotions, antibiotic 
+        ointments and skin treatments
+    </p><hr>
+    <h3 style="margin: 2rem 0rem">Applications & Markets:</h3>
+    <p>
+        - Gels, Pastes and Honey<br>
+        - Sauce and Liquids<br>
+        - Drink Flavoring<br>
+        - Tea / Instant Coffee<br>
+        - Drink Flavorings<br>
+        - Sugar and Spices<br>
+        - Small Convenience Items<br>
+        - Single-Dose Medications<br>
+        - Medical Items
+    </p>
+    <h3>Stock & Custom Printed</h3>
+    <p>StikPaks are becoming increasingly popular in our 
+        grab-and-go culture. They may be purchased in stock 
+        sizes and materials, or produced to your specifications 
+        with a custom order. Printed packaging available starting 
+        at 5,000 pouches.</p>
+    <h3>More Sizes Available</h3>
+    <p>View more of our small pouches on our <a href="standard-minipouches.html">Mini Pouches page</a>. 
+        Products start as small as 2.0” x 2.0” and are available 
+        in unique materials such as silver foil, multi-colored foil, 
+        clear face “window” bags, kraft, white write-on material and more.
+        IMPAK is also the world's leading innovator in liquid product 
+        pouches by built-in design and dispensing seals and features.</p>
+    
 	
-	<div class="section">
-		
-		
-
 	
-		<h3>Applications &amp; Markets:</h3>
-		
-		<div class="row">
-		
 	
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Gels, Pastes and Honey
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Sauce and Liquids
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Drink Flavoring
-			
-			</div>
-		
-		
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Tea / Instant Coffee
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Drink Flavorings
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Sugar and Spices
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Small Convenience Items
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Single-Dose Medications
-			
-			</div>
-			
-			<div class="col s12 l3">
-			
-				<i class="tiny material-icons teal-text lighten-2">check</i> Medical Items
-			
-			</div>
-			
-			
-			
-			</div>
-			
-			<p><strong>Stock &amp; Custom Printed</strong><br />
-				StikPaks are becoming increasingly popular in our grab-and-go culture. They may be purchased in stock sizes and materials, or produced to your specifications with a custom order. Printed packaging available starting at 5,000 pouches.</p>
-		
-		<p><strong>More Sizes Available</strong><br />
-			View more of our small pouches on our <a href="minipouches.html">Mini Pouches page</a>. Products start as small as 2.0” x 2.0” and are available in unique materials such as silver foil, multi-colored foil, clear face “window” bags, kraft, white write-on material and more.<br />
-
-IMPAK is also the world's leading innovator in liquid product pouches by built-in design and dispensing seals and features.
-</p>
-
-		
-		
 	
-	</div>	
-	
-	<div class="row">
-				
-					<a href="inquiryform_automated.html" target="_blank"><img class="responsive-img" src="images-m/flowwrapper-ad.jpg" alt="flowwrapper ad" /></a>
-				
-				</div>
 		
-		<div class="row" style="padding-top: 15px">  
-		  <h2>StikPak&trade; Packets</h2>  
+		<div class="row" >  
+		  <h2 style="text-align: center;">StikPak&trade; Packets Available Now</h2>  
 		  
 		  
 		  <div class="table-style">		  
@@ -594,7 +542,9 @@ IMPAK is also the world's leading innovator in liquid product pouches by built-i
 	
 	
 	
-	
+<div class="row">	
+    <a href="inquiryform_automated.html" target="_blank"><img class="responsive-img" src="images-m/flowwrapper-ad.jpg" alt="flowwrapper ad" /></a>	
+</div>
 	
 	<div class="section">
 		
@@ -740,9 +690,9 @@ IMPAK is also the world's leading innovator in liquid product pouches by built-i
 
 				<a href="quoterequest.html">Quote Request</a>
 
-				<a href="#">Custom Order Request</a>
+				<a href="custom-order-request.html">Custom Order Request</a>
 
-				<a href="forms/customquote.php">Custom Print Request</a>
+				<a href="custom-print-request.html">Custom Print Request</a>
 
 				<a href="orderform.html">Secure Order Form</a>
 			</div>
