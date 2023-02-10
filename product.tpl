@@ -192,14 +192,34 @@
 														<div class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></div>
 													<?php } ?>
 
+													
+													str_contains($string, 'Lazy')
+
+													<?php if (!$special) { ?>
+														<span class="price-normal"><?php echo $price; ?></span>
+													<?php } else { ?>
+														<span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
+													<?php } ?>
+
+
 													<?php if ($discounts) { ?>
-													<div class="discount">
-														<ul>
-														<?php foreach ($discounts as $discount) { ?>
-															<li><?php echo sprintf($text_discount, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+														<?php if (str_contains($heading_title, '/case')) { ?>
+															<div class="discount">
+																<ul>
+																<?php foreach ($discounts as $discount) { ?>
+																	<li><?php echo sprintf($text_discount_per_case, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																<?php } ?>
+																</ul>
+															</div>
+														<?php } else { ?>
+															<div class="discount">
+																<ul>
+																<?php foreach ($discounts as $discount) { ?>
+																	<li><?php echo sprintf($text_discount, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																<?php } ?>
+																</ul>
+															</div>
 														<?php } ?>
-														</ul>
-													</div>
 													<?php } ?>
 
 												</div> <!-- .price -->
