@@ -192,9 +192,6 @@
 														<div class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></div>
 													<?php } ?>
 
-													
-													str_contains($string, 'Lazy')
-
 													<?php if (!$special) { ?>
 														<span class="price-normal"><?php echo $price; ?></span>
 													<?php } else { ?>
