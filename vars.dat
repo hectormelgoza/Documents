@@ -1,0 +1,149 @@
+### HOST VARIABLES ### (DO NOT REMOVE OR ALTER THIS LINE) Version 2.81
+1 Full URL location to cart.pl script -->https://www.sorbentsystems.com/cgi-bin/cart.pl
+2 Default return shopping URL -->https://www.sorbentsystems.com
+3 URL to images or thumb-nail directory -->https://www.sorbentsystems.com/images
+4 URL to Custom image or company logo -->https://www.sorbentsystems.com/images08/logo.gif
+5 URL to wallpaper -->
+6 Sendmail, Windmail or Blat path -->/usr/sbin/sendmail -f orders@sorbentsystems.com
+7 Date program path -->
+8 System path to shoppers data files ("carts" directory) -->
+9 System path and name of invoice data file -->
+10 System path and name of language File -->
+11 Frames target name -->
+12 Parent Frame URL -->
+### PERSONAL VARIABLES ### (DO NOT REMOVE OR ALTER THIS LINE)
+1 Custom Options -->20
+2 Your email address -->orders@sorbentsystems.com
+3 Data file extention-->dat
+4 Business name -->
+5 Checks payable to -->Sorbent Systems/IMPAK Corporation 
+6 Guarantee statement --> <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1065840360/?label=YRDsCKiAkgkQ6N2d_AM&amp;guid=ON&amp;script=0"/>
+7 Address name -->Sorbent Systems/IMPAK Corporation
+8 Street address -->13700 S. Broadway
+9 City, state, zip -->Los Angeles, CA  90061
+10 Toll free phone number for cc transactions -->
+11 Website address -->www.sorbentsystems.com
+12 Allow Sales Tax -->1
+13 Your State(s) of taxation -->California
+14 State sales tax rate -->10.25
+15 bgcolor -->#FFFFFF
+16 Header font color -->#CC3300
+17 Header font face -->Verdana, Arial, Helvetica, sans-serif
+18 Header font size -->+2
+19 Standard font color -->#000000
+20 Standard font face -->Arial, Helvetica, sans-serif
+21 Standard font size -->4
+22 Thumb-nail image borders -->1
+23 Shopper's data expires -->3
+24 Secure online cc transacion payment option -->1
+25 Transacion via toll free number payment option -->1
+26 Check or Money Order payment option -->0
+27 Allow shipping -->2
+28 Show shipping weight with each item -->0
+29 Shipping methods -->Standard
+30 Initial shipping cost of first pound -->5.95,8.95,18.95,15.00,20.00
+31 Shipping cost for each additional pound -->.50,.50,.50,2,3
+32 Type of measure of weight. lbs or kg, etc. or just "units" -->units
+33 Is your host currently mapping domain names to IP addresses? -->1
+34 Shipping calculated by amount of purchase: Locations -->Standard
+35 Shipping calculated by amount of purchase: Amounts -->50,12.25,100,19.5%,200,16.5%,300,13.5%,350,12.5%,1000,11%,3500,9.6%,100000,8.25%
+36 Currency Symbol -->$|3|,
+37 Email receipt to customer -->1
+38 Backgroud color of address table on Check/Money Order page -->#FFFFFF
+39 IP addresses or cookies for shopper ID -->1
+40 Size of table borders when viewing shopping cart -->3
+41 The width of the table when viewing the shopping cart -->95%
+42 Online Check Draft Option -->0
+43 Use "state" field in shipping address -->1
+44 Show business name at top of all pages -->1
+45 Credit On Delivery payment option -->0
+46 Customer Comments -->30|4
+47 Required fields -->name,address,city,state,zip,country,phone,email
+48 Turn all JavaScript off -->0
+49 Add and redirect -->0
+50 i-check ID -->00000000
+51 Wallpaper URL or background color on check draft table -->#000000
+52 Webstore discount -->
+53 Email Signature -->NOTE: Due to rising fuel costs and high weight/volume ratio|of some items, you MAY be contacted for FREIGHT COST|adjustment PRIOR to shipping.|sales@sorbentsystems.com
+54 Paper color font -->
+55 Disable all diagnostics for security reasons -->1
+56 Meta Tags -->
+57 Email Content-Type -->
+58 Email Content-Transfer-Encoding -->
+59 Allow Coupon/Gift Certificate Discount -->0
+60 URL to Online Check Draft image instructions -->
+61 Disable truncating of quantity numbers -->0
+62 Auxiliary payment option -->
+63 Suppress custom descriptions -->0
+64 Add items to top or bottom of cart contents? -->top
+65 Shopper ID Prefix -->
+66 Authorized HTTP_REFERER domains -->
+67 Display "Empty Entire Cart" Button -->1
+68 Minimum/Maximum Order -->
+69 Order Tracking -->/home/impak2006/sorbentsystems.com/cgi-bin/beefjerky.dat
+70 Collect Company Name in shipping and billing -->1
+71 Auxiliary Real-Time Credit Card Processor Payment Option -->
+72 Email Receipt Tables -->15|25|4|10|10
+73 Show shipping weight total on receipt pages -->
+74 States -->
+75 Countries -->
+76 Sales tax state verification -->
+77 -->
+78 Refuse email addresses -->
+79 Referral ID -->
+80 Pending Order Tracking -->/home/impak2006/sorbentsystems.com/cgi-bin/pending.dat
+81 Second Auxiliary Real-Time Credit Card Processor Payment Option -->
+82 Suppress shipping/billing address in customers email receipts -->
+83 Collect only billing address for credit card payments -->
+84 Round up total shipping weight -->1
+85 "Remove" button status -->2
+86 Require customer to checkmark Refund Policy and Terms of Service Agreement checkbox -->2
+87 DOCTYPE Tag -->
+88 Max hits on cart before deny access -->500
+89 Max size (in bytes) of shopper's data files in temp directory before deletion -->200000
+### SECURE SERVER VARIABLES ### (DO NOT REMOVE OR ALTER THIS LINE)
+1 URL to secure server for cc purchase -->https://www.sorbentsystems.com/cgi-bin/ssl.pl
+2 Your Merchant ID or LOGIN ID -->
+3 Your font face on secure page -->Arial, Helvetica, sans-serif
+4 Font Color on secure page -->#000000
+5 Bgrd Color on secure page -->#FFFFFF
+6 Unique security id (1-12 characters, alpha/numeric, no spaces) -->
+7 Instant Transaction -->Your order will be shipped pending credit card approval.
+8 Email orders or append to a data file? -->/home/impak2006/sorbentsystems.com/cgi-bin/beefjerky
+9 ssl.pl accepts these card types -->visa,mastercard
+10 PGP PgpProg|PgpTempDir|PgpUserId|Version -->
+11 Credit card numbers are emailed here --> orders@sorbentsystems.com
+12 Remain in frames while in SSL -->0
+13 Pending Order Notice --> orders@sorbentsystems.com
+14 "https" URL to company logo for ssl.pl script -->
+### DATABASE VARIABLES ### (DO NOT REMOVE OR ALTER THIS LINE)
+1 System location of your database files -->
+2 Full URL to the image of cart.gif -->https://www.YourName.net/cart.gif
+3 Flat-file databases delimiter -->|
+4 Flat-file databases options delimiter -->^
+5 Database query string separator -->|
+6 Position of category in your data files -->1
+7 Position of stock/item number -->2
+8 Position of the name of the item -->3
+9 Position of description of the item -->4
+10 Position of the price of the item -->5
+11 Position of the shipping value of the item -->6
+12 Position of the name of the thumb-nail image of the item -->7
+13 Positions of additional fields of info -->8,9,10,11,12,13,14,15
+14 Optional no-image statement -->
+15 What do you want the order buttons to say -->   Add To Cart   
+16 URL of "home" icon at bottom of database displays -->
+17 Items per page -->50
+18 Uniform Width and Height of images -->
+19 Company logo displayed at top of database pages? -->1
+20 Align select pull-down menus (left, right or center) -->center
+21 Select pull-down menus (across or stack) -->across
+22 Navigation Bar -->
+23 Optional return shopping URL -->
+24 Position of Navigation Bar (left, or top) -->left
+25 Database Version (2.0 or 3.0) -->3.0
+26 Show all links to items or just next (all or next) -->all
+27 Navigation Bar #2 -->
+28 Database Purchase Button Location (top or bottom) -->bottom
+29 Restrict keyword search to these field positions -->
+### END OF ALL VARIABLES ### (DO NOT REMOVE OR ALTER THIS LINE)
