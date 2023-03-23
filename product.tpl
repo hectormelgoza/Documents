@@ -175,7 +175,18 @@
 															<div class="discount">
 																<ul>
 																<?php foreach ($discounts as $discount) { ?>
-																	<li><?php echo sprintf($text_discount_per_case, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																	<li><?php 			
+																	echo sprintf($text_discount_per_case, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																<?php } ?>
+																</ul>
+															</div>
+														<?php } elseif (strpos($heading_title, 'pack') !== false) { ?>
+															<div class="discount">
+																<ul>
+																<?php foreach ($discounts as $discount) { ?>
+																	<li><?php 
+
+																	echo sprintf($text_discount_per_pack, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
 																<?php } ?>
 																</ul>
 															</div>
@@ -183,13 +194,14 @@
 															<div class="discount">
 																<ul>
 																<?php foreach ($discounts as $discount) { ?>
-																	<li><?php echo sprintf($text_discount, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																	<li><?php 
+
+																	echo sprintf($text_discount, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
 																<?php } ?>
 																</ul>
 															</div>
 														<?php } ?>
 													<?php } ?>
-
 												</div> <!-- .price -->
 
 												<?php } ?>
