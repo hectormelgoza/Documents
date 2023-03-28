@@ -175,8 +175,23 @@
 															<div class="discount">
 																<ul>
 																<?php foreach ($discounts as $discount) { ?>
-																	<li><?php 			
-																	echo sprintf($text_discount_per_case, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																	<li><?php 
+																	
+																	preg_match('#\((.*?)\/#', $heading_title, $match);
+																	
+																	$case_quantity = (int) str_replace(',', '', $match[1]);																	
+																	
+																	$price_string = $discount['price'];
+
+																	$real_price = ltrim($price_string, '$');																	
+
+																	$conversion = ($real_price/$case_quantity);
+
+																	$unit_price = round($conversion, 3);
+
+																	$formatted = number_format((float)$unit_price, 3, '.', '');
+			
+																	echo sprintf($text_discount_per_case, $discount['quantity'], "<span>".$discount['price']."</span>", $formatted); ?></li>
 																<?php } ?>
 																</ul>
 															</div>
@@ -186,7 +201,21 @@
 																<?php foreach ($discounts as $discount) { ?>
 																	<li><?php 
 
-																	echo sprintf($text_discount_per_pack, $discount['quantity'], "<span>".$discount['price']."</span>"); ?></li>
+																	preg_match('#\((.*?)\/#', $heading_title, $match);
+																	
+																	$case_quantity = (int) str_replace(',', '', $match[1]);																	
+																	
+																	$price_string = $discount['price'];
+
+																	$real_price = ltrim($price_string, '$');																	
+
+																	$conversion = ($real_price/$case_quantity);
+
+																	$unit_price = round($conversion, 3);
+
+																	$formatted = number_format((float)$unit_price, 3, '.', '');
+
+																	echo sprintf($text_discount_per_pack, $discount['quantity'], "<span>".$discount['price']."</span>", $formatted); ?></li>
 																<?php } ?>
 																</ul>
 															</div>
