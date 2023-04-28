@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+	
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GM77M0CWTV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GM77M0CWTV');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drinkpak - flexible beverage packaging</title>
+<meta name="description" content="Flexible packaging for beverages - Mylar bags with spout fitments or caps, innovative designs, custom printing"/>
+<meta name="keywords" content="Mylar&reg;, Mylar&reg; bags, mylar bags, bags with spouts, bags with caps, flexible packaging, beverage packaging, drink packaging, mylar drink bags, mylar beverage bags, mylar drink pouches, mylar beverage pouches, plastic drink bags, plastic drink pouches, spout bags, spout pouches, bags with spouts, pouches with spouts, custom print bags, beverage bags, drink bags, beverage pouches, drink pouches, bagged drinks, bagged beverages, drink pack, beverage pack, long term storage, emergency prep, emergency preparation, emergency preparedness"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+
+	h1 {
+		font-family: 'Josefin Sans', sans-serif;
+	}
+	p, h2, h3, h4, h5, a, marquee {
+		font-family: 'Lato', sans-serif;
+	}
+	.link-btn {
+		display: inline-block;
+		list-style-type: none;
+		font-size: 20px;
+		padding: 4px 8px;
+		margin: 8px;
+	}
+	a:link, a:active, a:visited {
+		text-decoration: none;
+		color: black;
+	}
+	a:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	/* body {
+		background-image: url("media/bubble-liquid-lg.jpg");
+		background-repeat: no-repeat;
+  		position: fixed;
+	} */
+
+	body:before {
+  		content: "";
+  		display: block;
+  		position: fixed;
+  		left: 0;
+  		top: 0;
+  		width: 100%;
+  		height: 100%;
+  		z-index: -10;
+  		background: url("media/bubble-liquid-lg.jpg") no-repeat center center;
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+	}
+	
+	.topbar {
+		height: 70px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+        left: 0;
+		padding: 0 40px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.topbar-text {
+		font-size: 24px;
+		padding: 8px;
+		width: 80%;
+		background-color: none;
+		margin: 14px 0 0 20px;
+	}
+
+	main {
+        width: 95%;
+		margin: 80px auto 20px;
+	}
+
+	.sidebar {
+		width: 250px; height: 520px; background-color: #FDFDFDAA; border-radius: 10px; padding: 10px 10px 15px 15px; margin: 20px 0;
+	}
+
+	.sidebar-pic {
+		width: 230px;
+		height: 230px;
+		margin: 10px;
+		float: none;
+	}
+
+	.categories-text {
+		writing-mode: vertical-lr; text-orientation: upright; font-size: 36px; text-shadow: 2px 2px 4px #fbd004; margin: 230px 40px;
+	}
+
+	.card-container {
+		max-width: 1050px; display: flex; flex-flow: row wrap; justify-content: flex-start; border-right: 4px solid; margin: 0;
+	}
+
+	.card {
+		height: 380px;
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border: 2px solid;
+		border-radius: 10px;
+		background-color: #FDFDFD;
+		margin: 15px;
+		transition: transform .3s ease-in-out;
+  		-webkit-transition: transform .3s ease-in-out;
+  		-moz-transition: transform .3s ease-in-out;
+	}
+
+	.card:hover {
+		transform: scale(1.1);
+	}
+
+	.card img {
+		height: 260px;
+		padding: 20px 20px 0;
+	}
+
+	.card h2 {
+		line-height: 16px;
+	}
+
+	.featured-text {
+		writing-mode: vertical-lr; text-orientation: upright; font-size: 36px; text-shadow: 2px 2px 4px #fbd004; margin: 260px 40px;
+	}
+
+	.featured-container {
+		width: 200px; display: flex; flex-direction: column; align-items: center; gap: 32px; margin: 20px 0;
+	}
+
+	.featured {
+		height: 240px;
+		width: 190px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		border: 2px solid;
+		border-radius: 10px;
+		background-color: #FDFDFD;
+		transition: transform .3s ease-in-out;
+  		-webkit-transition: transform .3s ease-in-out;
+  		-moz-transition: transform .3s ease-in-out;
+	}
+
+	.featured:hover {
+		transform: scale(1.1);
+	}
+	
+	.featured img {
+		height: 150px;
+		padding: 20px 20px 0;
+	}
+	
+	@media screen and (max-width: 500px) {
+		.topbar {
+			position: relative;
+			height: 200px;
+			padding: 20px 20px 0;
+			flex-direction: column;
+		}
+		main {
+			margin: 300px auto 20px;
+		}
+		.topbar-text {
+			width: 300px; 
+			font-size: 20px;
+			margin: 10px 0 0 0;
+			background-color: #ffffff88;
+		}
+		.logo {
+			width: 25px;
+			height: 32px;
+			padding: 16px;
+		}
+		main {
+			margin: 20px auto 0;
+		}
+		.sidebar {
+			width: 320px; height: 320px; margin: 0 auto 20px;
+		}
+		.sidebar-pic {
+			width: 150px;
+			height: 150px;
+			float: right;
+		}
+		.categories-text {
+			writing-mode: horizontal-tb;
+			margin: 20px auto;
+		}
+		.card-container {
+			flex-flow: column nowrap;
+			gap: 20px; 
+			padding-right: 0;
+			border-right: none;
+			margin: 0 auto;
+		}
+		.card {
+			margin: 0 auto;
+			transition: none;
+		}
+		.featured-text {
+			writing-mode: horizontal-tb;
+			margin: 30px auto 10px;
+		}
+		.featured-container {
+			width: 310px;
+			gap: 20px;
+			margin: 20px auto;
+		}
+		.featured {
+			height: 350px;
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			text-align: center;
+			border: 2px solid;
+			border-radius: 10px;
+			background-color: #FDFDFD;
+			transition: none;
+		}
+
+		.featured img {
+			height: 260px;
+			padding: 20px 20px 0;
+		}
+	}
+</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="topbar">
+			<h1 style="font-size: 40px; line-height: 20px;">DrinkPAK.com</h1>
+			<p class="topbar-text"><b>Flexible packaging for beverages</b> | Mylar&reg; pouches | spout fitments | multi-serve | single-serve | custom</p>		
+		</div>
+	</header>
+
+	<main>
+		
+	<div>
+			
+	<div style="display: flex; flex-flow: row wrap; margin: 0 auto;">
+
+		<div class="sidebar">
+			<img src="media/OG-gallon-bag.png" class="sidebar-pic">
+			<p>Flexible packaging provides a cost-saving alternative to traditional rigid containers for beverages. Many manufacturers are switching to flexible materials for the sake of source reduction, 
+				increased shipping efficiency, space saving, and edge-to-edge printing capability. Whether it's single-serving beverages or gallon packs to serve big groups, flexible pouches are increasingly appearing 
+				on retail shelves and at restaurants.</p>
+		</div>
+
+		<h1 class="categories-text">CATEGORIES</h1>
+				
+		<div class="card-container">
+
+			<div class="card">
+				<a href="https://www.sorbentsystems.com/spoutpak.html#8oz" target="_blank">
+					<img src="media/mini-pouches.jpg">
+				</a>
+				<a href="https://www.sorbentsystems.com/spoutpak.html#8oz" target="_blank">
+					<div>
+						<h2>Mini SpoutPAKs</h2>
+						<p>under 8 fl oz</p>
+					</div>
+				</a>
+			</div>
+	
+		<div class="card">
+			<a href="https://www.sorbentsystems.com/spoutpak.html#16oz" target="_blank">
+				<img src="media/small-pouches.jpg">
+			</a>
+			<a href="https://www.sorbentsystems.com/spoutpak.html#16oz" target="_blank">
+				<div>
+					<h2>Small SpoutPAKs</h2>
+					<p>8 - 16 fl oz</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="https://www.sorbentsystems.com/spoutpak.html#32oz" target="_blank">
+				<img src="media/medium-pouches.jpg">
+			</a>
+			<a href="https://www.sorbentsystems.com/spoutpak.html#32oz" target="_blank">
+				<div>
+					<h2>Medium SpoutPAKs</h2>
+					<p>16 - 32 fl oz</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="https://www.sorbentsystems.com/spoutpak.html#64oz" target="_blank">
+				<img src="media/large-pouches.jpg">
+			</a>
+			<a href="https://www.sorbentsystems.com/spoutpak.html#64oz" target="_blank">
+				<div>
+					<h2>Large SpoutPAKs</h2>
+					<p>32 - 64 fl oz</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="https://www.sorbentsystems.com/spoutpak.html#over64oz" target="_blank">
+				<img src="media/jumbo-pouches.jpg">
+			</a>
+			<a href="https://www.sorbentsystems.com/spoutpak.html#over64oz" target="_blank">
+				<div>
+					<h2>Jumbo SpoutPAKs</h2>
+					<p>over 64 fl oz</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="card">
+			<a href="https://www.sorbentsystems.com/flexprin.html" target="_blank">
+				<img src="media/custom-print.jpg">
+			</a>
+			<a href="https://www.sorbentsystems.com/flexprin.html" target="_blank">
+				<div>
+					<h2>Custom Print</h2>
+					<p>personalize your product</p>
+				</div>
+			</a>
+		</div>
+
+		</div>
+
+		<h1 class="featured-text">FEATURED</h1>
+		
+		<div class="featured-container">
+
+		<div class="featured">
+			<a href="https://www.impakcorporation.com/flexible_packaging/FTSSP1G18HG" target="_blank">
+				<img src="media/18-hr-growler.png">
+			</a>
+			<a href="https://www.impakcorporation.com/flexible_packaging/FTSSP1G18HG" target="_blank">
+				<div>
+					<h3>18 hr Growler</h3>
+				</div>
+			</a>
+		</div>
+
+		<div class="featured">
+			<a href="https://www.impakcorporation.com/flexible_packaging/31QBFTS20LTEC-10bags" target="_blank">
+				<img src="media/cube-pak.jpg">
+			</a>
+			<a href="https://www.impakcorporation.com/flexible_packaging/31QBFTS20LTEC-10bags" target="_blank">
+				<div>
+					<h3>CubePAK</h3>
+				</div>
+			</a>
+		</div>
+
+		<div class="featured">
+			<a href="https://www.impakcorporation.com/flexible_packaging/CP030421CPEHEAD" target="_blank">
+				<img src="media/barrel-pouch.png">
+			</a>
+			<a href="https://www.impakcorporation.com/flexible_packaging/CP030421CPEHEAD" target="_blank">
+				<div>
+					<h3>Barrel Pouch</h3>
+				</div>
+			</a>
+		</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+	</div>
+		
+	</main>
+
+</body>
+	
+</html>
