@@ -22,6 +22,37 @@
 <meta property="og:site_name" content="SorbentSystems.com "/>
 <title>Sorbent Systems - Flexible Packaging | Desiccants | Vacuum Sealers</title>
 
+<!--  favicon -->
+<link rel="icon" type="images/x-icon" href="images/sorbent-systems-favicon.png" />
+<!--  apple-touch-icon -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900" rel="stylesheet" type="text/css">
+<!-- FontAwesome CSS -->
+<link href="https://www.sorbentsystems.com/assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- Material Icons CSS -->
+<link href="https://www.sorbentsystems.com/assets/fonts/iconfont/material-icons.css" rel="stylesheet">
+<!-- materialize -->
+<link href="https://www.sorbentsystems.com/assets/materialize/css/materialize.min.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="https://www.sorbentsystems.com/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- shortcodes -->
+<link href="https://www.sorbentsystems.com/assets/css/shortcodes/shortcodes.css" rel="stylesheet">
+  
+<!--Footable Bootstrap CSS  -->
+<link href="https://www.sorbentsystems.com/assets/footable/css/footable.bootstrap.css" type="text/css" rel="stylesheet" />
+  
+<!-- Style CSS -->
+<link href="https://www.sorbentsystems.com/assets/style.css" rel="stylesheet">
+
+<!--<link href="css-m/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+<link href="https://www.sorbentsystems.com/assets/css-m/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<!-- Custom CSS-->
+<link href="https://www.sorbentsystems.com/assets/css-m/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+
 <script type="text/javascript" src="myscripts.js">
 
 </script>
@@ -241,8 +272,20 @@ body{
 }
 
 .overstock-container{
-	background: linear-gradient(to left, rgb(223, 153, 54), rgb(223, 153, 54));
-	
+	background: linear-gradient(rgba(168, 88, 3, 0.812), #d48702,rgba(168, 88, 3, 0.812));
+	color: white;
+	font-size: 26px;
+	height: 100px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+.rollstock-container{
+	background: linear-gradient(rgba(84, 84, 84, 0.687), #8E8E8E, rgba(84, 84, 84, 0.687));
+    background-size: cover;
 	color: white;
 	font-size: 26px;
 	height: 100px;
@@ -262,8 +305,13 @@ body{
 .overstock-container:hover{
 	
  transition: .322s ease;
-  background: linear-gradient(to left, rgb(181, 118, 10), rgb(181, 118, 10));
+ background-color: rgba(139, 95, 6, 0.861);
 }
+.rollstock-container:hover{
+	
+    transition: .322s ease;
+     background-color: rgb(116, 116, 116);
+   }
 
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
 	margin-bottom: 2rem;
@@ -398,6 +446,14 @@ body{
 		margin-top: 4.8rem;
 	}
 	.overstock-container img{ 
+		display: none;
+	}
+	.rollstock-container img{ 
+		display: none;
+	}
+}
+@media screen and (max-width: 374px){
+	.sub-banner-text{
 		display: none;
 	}
 }
@@ -663,14 +719,21 @@ body{
 	</a>
 </div>
 
-<div class="banner-full" style="margin: 0rem 0rem 2rem 0rem;">
-	<a href="about.html" aria-label="Read more about the Interpack Packaging  Tradeshow in Germany">
-	<img id="interpack-long" title="impak travels to interpack show in Germany" alt="come see Impak and our brands in Germany at interpack packaging tradeshow"  src="images/Interpack23-banner.jpg" />
-	</a>
-	<a href="about.html" aria-label="Read more about the Interpack Packaging  Tradeshow in Germany">
-		<img id="interpack-short" title="moble friendly notice of impack at interpack Germany" alt="small banner on blue announcing Impack Corporation atending packaing tradeshow interpack" src="banner/Interpack23-banner-short.jpg" display="none" />
-	</a>
-</div>
+<a href="https://www.sorbentsystems.com/pakvf4c-tubing.html" class="overstock-link" style="text-decoration: none;">
+	<div class="rollstock-container">
+		
+			
+		
+		<div class="overstock-main">
+			<div>Tubing & Rollstock</div>
+			<div style="font-size: 24px;" class="sub-banner-text">Customizable Slit Widths</div>
+		</div>
+		
+			<img alt="tubing and rollstock laminated film" style="width: 130px; position: relative; left: -1.5rem; top: 1.2px; " src="images/rollstock-banner-2.png">
+		
+		
+	</div>
+</a>
 <a href="https://www.sorbentsystems.com/overruns.html" class="overstock-link" style="text-decoration: none;">
 	<div class="overstock-container">
 		
@@ -678,7 +741,7 @@ body{
 		
 		<div class="overstock-main">
 			<div>OVERSTOCK SALE</div>
-			<div style="font-size: 24px;">30 - 50% Price Reduction</div>
+			<div style="font-size: 24px;" class="sub-banner-text">30 - 50% Price Reduction</div>
 		</div>
 		
 			<img alt="Compare us to ULINE!" style="width: 110px; position: relative; left: -1.5rem; " src="images/CUTU.png">
