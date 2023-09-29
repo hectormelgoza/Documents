@@ -23,7 +23,7 @@
 <title>Sorbent Systems - Flexible Packaging | Desiccants | Vacuum Sealers</title>
 
 <!--  favicon -->
-<link rel="icon" type="images/x-icon" href="images/sorbent-systems-favicon.png" />
+<link rel="icon" href="/images/sorbent-systems-favicon.png" type="image/png"/>
 <!--  apple-touch-icon -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
@@ -120,7 +120,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	color: white;
-	font-size: 24px;
+	
 	font-weight: 900;
 	letter-spacing: .1rem;
 	border-radius: 5px;
@@ -153,6 +153,7 @@ body{
 	margin: auto;
 	height: 100px;
 	border-radius: 5px;
+	
 }
 .fix-anything-center{
 	color: white;
@@ -184,9 +185,16 @@ body{
 	font-size: 24px;
 }
 @media screen and (max-width:700px) {
-    .fix-anything-left{
-		display: none;
-	}
+   .overstock- img{
+	display: none;
+   }
+   .overstock-banner{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+   }
 	.sub-header-left, .fix-anything-right{
 		display: none;
 	}
@@ -283,24 +291,29 @@ body{
 	font-weight: 600;
 	margin-bottom: 2rem;
 }
-.rollstock-container{
-	background: linear-gradient(rgba(84, 84, 84, 0.687), #8E8E8E, rgba(84, 84, 84, 0.687));
-    background-size: cover;
+.medica-container{
+	background-image: url(images/medica-background.webp);
+    background-position-x: 2rem;
+	background-position-y: -107rem;
 	color: white;
 	font-size: 26px;
 	height: 100px;
 	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 600;
 	margin-bottom: 2rem;
-}
-.overstock-main{
-	padding: 0rem 5rem;
-	font-size: 32px;
+	display: flex;
+	align-items: center;
 	text-align: center;
-	flex-direction: column;
+}
+.medica-banner{
+	font-size: 24;
+	font-weight: 600;
+	width: 520px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	
+	
 }
 .overstock-container:hover{
 	
@@ -418,6 +431,16 @@ body{
 .fade-animation {
   animation: fadeAnimation 0.8s ease-in-out forwards;
 }
+.overstock-banner{
+	width: 520px;
+	min-height: 100px;
+ 	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	font-size: 24;
+	font-weight: 600;
+}
 
 @keyframes fadeAnimation {
   0% {
@@ -428,11 +451,11 @@ body{
   }
 }
 
-
-
-
 #carousel-title{
 	margin-top: 2rem;
+}.sub-banner-text{
+	font-size: 24px;
+	font-weight: 600;
 }
 @media screen and (max-width: 768px){
 	.main-categories-row, .sixpack-row-1{
@@ -445,17 +468,96 @@ body{
 	.flexible-card{
 		margin-top: 4.8rem;
 	}
-	.overstock-container img{ 
+	
+	
+	 .hall{ 
 		display: none;
 	}
-	.rollstock-container img{ 
-		display: none;
+	.medica-banner{
+		width: 100%;
+		justify-content: space-evenly;
+		min-width: auto;
+	}
+	.medica-container{
+		background-image: none;
+		background-color: #082B51;
+	}
+	.medica-main{
+		font-size: 26px;
+	font-weight: 600;
 	}
 }
 @media screen and (max-width: 374px){
 	.sub-banner-text{
+		font-size: 18px;
+	}
+	.medica-banner{
+		justify-content: space-evenly;
+	}
+}
+
+.overstock-banner img{
+	width: 100px;
+}
+@media screen and (max-width: 949px){
+	.medica-container{background-position-x: -6rem;}
+	.medica-banner{
+		text-align: center;
+	}
+}
+
+.rollstock-container:hover{
+	
+    transition: .322s ease;
+     background-color: rgb(116, 116, 116);
+   }
+   .rollstock-container{
+	background: linear-gradient(rgba(84, 84, 84, 0.687), #8E8E8E, rgba(84, 84, 84, 0.687));
+    background-size: cover;
+	color: white;
+	font-size: 24px;
+	height: 100px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+.rollstock-banner{
+	width: 520px;
+	
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	margin: 2rem 0rem;
+	max-height: 100px;
+	font-size: larger;
+}
+.rollstock-banner img{
+	max-height: 100px;
+	scale: 85%;
+}
+@media screen and (max-width: 550px){
+	.rollstock-banner, .overstock-banner, .fix-anything-banner{
+		width: 100%;
+	}
+	.sub-banner-text{
+		font-size: 22px;
+	}
+	.fix-anything-banner{
+		border-radius: 0px;
+	}
+	.rollstock-banner img, .overstock-banner img{
 		display: none;
 	}
+	.rollstock-banner, .overstock-banner{
+		display: flex;
+		justify-content: center;
+	}
+	.rollstock-container, .medica-container, .overstock-container{border-radius: 0px;}
+	
 }
 </style>
 
@@ -719,32 +821,53 @@ body{
 	</a>
 </div>
 
-<a href="https://www.sorbentsystems.com/pakvf4c-tubing.html" class="overstock-link" style="text-decoration: none;">
-	<div class="rollstock-container">
-		
+
+	<div class="medica-container">
+		<div class="medica-banner">
+			<div class="medica-main">
+				<div>Düsseldorf, Germany</div>
+				<div class="sub-banner-text">13 - 16 November 2023</div>
+			</div>
 			
-		
-		<div class="overstock-main">
-			<div>Tubing & Rollstock</div>
-			<div style="font-size: 24px;" class="sub-banner-text">Customizable Slit Widths</div>
+			<div>
+				<img class="medica-image" alt="Sorbent Systems travel to Dusseldorf, Germany for Medica trade show" title="MEDICA 2023: Where Healthcare Is Going | November 13-16 | Dusseldorf, Germany" style="width: 70px;" src="images/medica_logo_379.jpg">
+			</div>
+				
+			<div class="hall" style="font-size: 20px;">Diagnostics Hall<br>Booth D19-2</div>
 		</div>
-		
-			<img alt="tubing and rollstock laminated film" style="width: 130px; position: relative; left: -1.5rem; top: 1.2px; " src="images/rollstock-banner-2.png">
-		
-		
 	</div>
-</a>
+	<a href="https://www.sorbentsystems.com/pakvf4c-tubing.html" class="overstock-link" style="text-decoration: none;">
+		<div class="rollstock-container">
+			
+				
+			<div class="rollstock-banner">
+				<div class="rollstock-main">
+					<div>Tubing & Rollstock</div>
+					<div class="sub-banner-text">Customizable Slit Widths</div>
+				</div>
+				
+					<div>
+						<img alt="tubing and rollstock laminated film"  src="images/rollstock-banner-2.png">
+					</div>
+			</div>
+			
+			
+			
+		</div>
+	</a>
 <a href="https://www.sorbentsystems.com/overruns.html" class="overstock-link" style="text-decoration: none;">
 	<div class="overstock-container">
 		
 			
-		
-		<div class="overstock-main">
-			<div>OVERSTOCK SALE</div>
-			<div style="font-size: 24px;" class="sub-banner-text">30 - 50% Price Reduction</div>
+		<div class="overstock-banner">
+			<div class="overstock-main">
+				<div style="font-size: 32px;">OVERSTOCK SALE</div>
+				<div style="font-size: 24px;" class="sub-banner-text">30 - 50% Price Reduction</div>
+			</div>
+			<div class="overstock-image"><img alt="Compare us to ULINE!"  src="images/CUTU.png"></div>
+				
 		</div>
 		
-			<img alt="Compare us to ULINE!" style="width: 110px; position: relative; left: -1.5rem; " src="images/CUTU.png">
 		
 		
 	</div>
@@ -752,9 +875,7 @@ body{
 
 <div class="fix-anything-banner-container">
 	<div class="fix-anything-banner">
-		<div class="fix-anything-left">
-			
-		</div>
+		
 		<div class="fix-anything-center">
 			<div class="fix-anything-header">
 				WE CAN FIX ANYTHING
@@ -778,6 +899,7 @@ body{
 		</div>
 	</div>
 </div>
+
 <div class="slider-area">
 	 
 	<div class="wrapper">
