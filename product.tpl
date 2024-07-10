@@ -173,9 +173,22 @@
 
 															$formatted_conversion = number_format((float)$rounded_conversion, 4, '.', '');
 
-															$final_string = " /case -- ($%s each)";
+															$final_string = "";
 
 															echo sprintf($final_string, $formatted_conversion); ?>
+                                                            <div class="discount-one">
+																<p><?php 
+																preg_match('#\((.*?)\/#', $heading_title, $match);
+																
+																$case_quantity = (int) str_replace(',', '', $match[1]);                                                                        
+																$price_string = $price;
+																
+																$real_price = ltrim($price_string, '$');                                                                     
+																$conversion = ($real_price/$case_quantity);
+																$unit_price = round($conversion, 4);
+																$formatted = number_format((float)$unit_price, 4, '.', '');
+																echo sprintf('1 case: <span class="discount-one-price">%s</span> /case -- ($%s each)', $price_string, $formatted); ?></p>
+															</div>
 														<?php } elseif (strpos($heading_title, 'pack') !== false) { ?>
 															<span class="price-normal"><?php 
 			
