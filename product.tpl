@@ -192,7 +192,7 @@
 
 															$formatted_conversion = number_format((float)$rounded_conversion, 4, '.', '');
 
-															$final_string = " /pack -- ($%s each)";
+															$final_string = "";
 
 															echo sprintf($final_string, $formatted_conversion); ?>
 														<?php } else {?>
