@@ -157,7 +157,49 @@
 												
 												<?php echo $text_price; ?><br>
 													<?php if (!$special) { ?>
-														<span class="price-normal"><?php echo $price; ?></span>
+														<?php if (strpos($heading_title, 'case') !== false) { ?>
+															<span class="price-normal"><?php 
+			
+															echo $price; ?></span>
+															<?php
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+
+															$conversion_per_unit = ($price_trimmed/$case_quantity);
+
+															$rounded_conversion = round($conversion_per_unit, 4);
+
+															$formatted_conversion = number_format((float)$rounded_conversion, 4, '.', '');
+
+															$final_string = " /case -- ($%s each)";
+
+															echo sprintf($final_string, $formatted_conversion); ?>
+														<?php } elseif (strpos($heading_title, 'pack') !== false) { ?>
+															<span class="price-normal"><?php 
+			
+															echo $price; ?></span>
+															<?php
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+
+															$conversion_per_unit = ($price_trimmed/$case_quantity);
+
+															$rounded_conversion = round($conversion_per_unit, 4);
+
+															$formatted_conversion = number_format((float)$rounded_conversion, 4, '.', '');
+
+															$final_string = " /pack -- ($%s each)";
+
+															echo sprintf($final_string, $formatted_conversion); ?>
+														<?php } else {?>
+															<span class="price-normal"><?php 
+			
+															echo $price; ?></span>
+														<?php } ?>
 													<?php } else { ?>
 														<span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
 													<?php } ?>
@@ -187,9 +229,9 @@
 
 																	$conversion = ($real_price/$case_quantity);
 
-																	$unit_price = round($conversion, 3);
+																	$unit_price = round($conversion, 4);
 
-																	$formatted = number_format((float)$unit_price, 3, '.', '');
+																	$formatted = number_format((float)$unit_price, 4, '.', '');
 			
 																	echo sprintf($text_discount_per_case, $discount['quantity'], "<span>".$discount['price']."</span>", $formatted); ?></li>
 																<?php } ?>
@@ -211,9 +253,9 @@
 
 																	$conversion = ($real_price/$case_quantity);
 
-																	$unit_price = round($conversion, 3);
+																	$unit_price = round($conversion, 4);
 
-																	$formatted = number_format((float)$unit_price, 3, '.', '');
+																	$formatted = number_format((float)$unit_price, 4, '.', '');
 
 																	echo sprintf($text_discount_per_pack, $discount['quantity'], "<span>".$discount['price']."</span>", $formatted); ?></li>
 																<?php } ?>
@@ -790,7 +832,7 @@
 	
 
 	<script type="text/javascript">
-		$('#button-cart').bind('click', function() {
+		$('#button-cart').on('click', function() {
 			$.ajax({
 				url: 'index.php?route=checkout/cart/add',
 				type: 'post',
@@ -819,12 +861,12 @@
 				}
 			});
 		});
-		$('.product-info .input-qty .qty-minus').live('click', function() {
+		$('.product-info .input-qty .qty-minus').on('click', function() {
 			if($('#qty-input').val()>1) {
 			  $('#qty-input').val(parseInt($('#qty-input').val())-1);
 			}
 		});
-		$('.product-info .input-qty .qty-plus').live('click', function() {
+		$('.product-info .input-qty .qty-plus').on('click', function() {
 			$('#qty-input').val(parseInt($('#qty-input').val())+1);
 		});	
 	</script>
@@ -872,7 +914,7 @@
 
 
 	<script type="text/javascript">
-		$('#review .pagination a').live('click', function() {
+		$('#review .pagination a').on('click', function() {
 		$('#review').fadeOut('slow');
 			
 		$('#review').load(this.href);
@@ -882,7 +924,7 @@
 		return false;
 	});			
 	$('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
-	$('#button-review').bind('click', function() {
+	$('#button-review').on('click', function() {
 		$.ajax({
 			url: 'index.php?route=product/product/write&product_id=<?php echo $product_id; ?>',
 			type: 'post',
@@ -920,7 +962,7 @@
 	<script type="text/javascript">
 	$(document).ready(function() {
 		
-		if ($.browser.msie && $.browser.version == 6) {
+		if ((navigator.userAgent.toLowerCase().indexOf("msie 6") != -1) && (navigator.userAgent.toLowerCase().indexOf("msie 7") == -1)) {
 			$('.date, .datetime, .time').bgIframe();
 		}
 		$('.date').datepicker({dateFormat: 'yy-mm-dd'});
