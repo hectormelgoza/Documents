@@ -5,14 +5,14 @@ $(document).on('keyup','[name=\'quantity\']', function() {
 });
 $(document).on('click', '.qty-plus', function() {
     var heading_title = $('.product-info .page-header h1').text().toLowerCase();
-    if (!isNaN($('.product-info [name="quantity"]').val()) && $('.product-info [name="quantity"]').val() > 0 && (heading_title.indexOf('case') === -1) && (heading_title.indexOf('pack') === -1)) {
+    if (!isNaN($('.product-info [name="quantity"]').val()) && $('.product-info [name="quantity"]').val() > 0) {
         getLatestprice();
     }
 });
 
 $(document).on('click', '.qty-minus', function() {
     var heading_title = $('.product-info .page-header h1').text().toLowerCase();
-    if (!isNaN($('.product-info [name="quantity"]').val()) && $('.product-info [name="quantity"]').val() > 0 && (heading_title.indexOf('case') === -1) && (heading_title.indexOf('pack') === -1)) {
+    if (!isNaN($('.product-info [name="quantity"]').val()) && $('.product-info [name="quantity"]').val() > 0) {
         getLatestprice();
     }
 });
