@@ -206,7 +206,7 @@
 																$conversion = ($real_price/$case_quantity);
 																$unit_price = round($conversion, 4);
 																$formatted = number_format((float)$unit_price, 4, '.', '');
-																echo sprintf("1 pack: <span>%s</span> /pack -- ($%s each)", $price_string, $formatted); ?></p>
+																echo sprintf('1 pack: <span class="discount-one-price">%s</span> /pack -- ($%s each)', $price_string, $formatted); ?></p>
 															</div>
 														<?php } else {?>
 															<span class="price-normal"><?php 
