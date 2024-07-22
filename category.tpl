@@ -137,10 +137,9 @@
 									<div class="list-options"> 
 
 										<div class="sort">
-
-											<?php echo $text_sort; ?>
-
-											<select onchange="location = this.value;">
+											
+											<label for="sort-select"><?php echo $text_sort; ?></label>
+											<select id="sort-select" onchange="location = this.value;">
 												<?php foreach ($sorts as $sorts) { ?>
 												<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
 												<option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
@@ -154,9 +153,8 @@
 
 										<div class="limit">
 
-											<?php echo $text_limit; ?>
-
-											<select onchange="location = this.value;">
+                                            <label for="limit-select"><?php echo $text_limit; ?></label>
+											<select id="limit-select" onchange="location = this.value;">
 												
 												<?php foreach ($limits as $limits) { ?>
 
