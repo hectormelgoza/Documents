@@ -283,13 +283,13 @@ class ControllerProductCategory extends Controller {
 			$this->data['sorts'][] = array(
 				'text'  => $this->language->get('text_price_asc'),
 				'value' => 'p.price-ASC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+				'href'  => 'https://www.impakcorporation.com/product/category/' . strtolower(str_replace(' ', '-', $category_info['name'])) . '/sorted/&path=' . $this->request->get['path'] . '&sort=p.price&order=ASC'  . $url
 			); 
 
 			$this->data['sorts'][] = array(
 				'text'  => $this->language->get('text_price_desc'),
 				'value' => 'p.price-DESC',
-				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+				'href'  => 'https://www.impakcorporation.com/product/category/' . strtolower(str_replace(' ', '-', $category_info['name'])) . '/sorted/&path=' . $this->request->get['path'] . '&sort=p.price&order=DESC'  . $url
 			); 
 			
 			if ($this->config->get('config_review_status')) {
