@@ -94,7 +94,7 @@
 	<link rel="stylesheet" type="text/css" href="catalog/view/theme/clearshop/stylesheet/camera.css" media="screen"/>
 	<?php } ?>
 
-	<script type="text/javascript" src="catalog/view/theme/clearshop/twitter/jquery.tweet.min.js"></script>
+	
 
 	<script type="text/javascript" src="catalog/view/theme/clearshop/js/cloud-zoom.1.0.3-min.js"></script>
 
