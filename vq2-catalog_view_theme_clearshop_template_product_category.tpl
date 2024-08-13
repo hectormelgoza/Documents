@@ -251,12 +251,6 @@
 
 													<div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
 
-													<div class="links">
-														<span class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');" title="<?php echo $button_wishlist; ?>" class="tooltp" ><i class="icon-heart"></i></a></span>
-														
-														<span class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');" title="<?php echo $button_compare; ?>" class="tooltp" ><i class="icon-plus"></i></a></span>
-													</div>
-
 												</div> <!-- .inner2 -->
 												
 											</div> <!-- .inner -->
