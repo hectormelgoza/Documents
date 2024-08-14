@@ -210,8 +210,7 @@
 
 													<?php if ($product['thumb']) { ?>
 														<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" 
-			title="<?php echo $product['title_tag']; ?>" alt="<?php echo $product['alt_tag']; ?>" width="190" height="190"
-			 /></a></div>
+			title="<?php echo isset($product['title_tag']) ? $product['title_tag'] : '' ; ?>" alt="<?php echo isset($product['alt_tag']) ? $product['alt_tag'] : '' ; ?>" width="190" height="190"/></a></div>
 													<?php } ?>
 
 													<?php if ($product['price'] && $product['special']) { ?>
