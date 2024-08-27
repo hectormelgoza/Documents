@@ -1,0 +1,181 @@
+Dansie Shopping Cart Language Module 3.71 -->English
+1 -->Purchasing by Check or Money Order
+2 -->Shipping Information
+3 -->(Please print)
+4 -->Name:
+5 -->Mailing Address:
+6 -->City, State, Zip:
+7 -->Country:
+8 -->Email Address:
+9 -->Phone Number:
+10 -->Make all checks payable to:
+11 -->Send this order form with payment to:
+12 -->Return to
+13 -->PRINT THIS PAGE FOR YOUR RECEIPT
+14 -->Secured Credit Card Transaction
+15 --><br>Please enter SHIPPING ADDRESS:
+16 -->Automatically sending your browser to the secure server. If your browser doesn't continue to the secure server within a few seconds, click the button below.
+17 -->It appears you are behind a firewall. Considering lowering your firewall for this domain to make your purchase.<BR>Or contact the webmaster and let them know.
+18 -->Minimum Order:<BR>To place an order, the subtotal must be a minimum of:
+19 (Shipping ENTER) -->https://www.sorbentsystems.com/images/continue-to-payment-btn.png
+20 -->Sorry, you forgot to include some important information.
+21 -->Please go back and fill in all required fields so we can ship your products to you.
+22 -->Payment Options
+23 -->Sorry, there was a failure in processing your credit card. Would you like to try again?
+24 -->Choose Payment Option:
+25 -->Credit Card Transaction Via Telephone
+26 -->Check or Money Order
+27 -->Purchase
+28 -->Thank you for your purchase!<br /><a href="http://www.sorbentsystems.com/thankyou.html">CONTINUE</a>
+29 -->Below is a copy of what you ordered.
+30 -->These products will be shipped to:
+31 -->Please call now to submit your credit card number 310-715-6600.
+32 -->Cart - Sorbent Systems
+33 -->CART
+34 -->Quantity
+35 (Change Button) -->Update
+36 -->Price
+37 -->S&H:
+38 (Remove Button) -->Remove
+39 -->Item Total:
+40 --><p style="font-weight: bold; font-size: 24px;">Your Cart Is Empty</p>
+41 (Continue Shopping Button) -->https://www.sorbentsystems.com/images/continue-shopping-btn.png
+42 -->Check out for
+43 -->Sub Total:
+44 -->Sales Tax:<br>- Will be adjusted based on final destination.<br>- If you possess a resale certificate, write your resale number in the notes section during the checkout process.<br><br>
+45 -->Check here if you're a resident of
+46 -->Select if you're a resident of:
+47 -->None of the above
+48 -->Choose Shipping and Handling Method:
+49 -->Shipping and Handling:<br>- Due to rising fuel costs and high weight/volume ratio of some items, you MAY be contacted for FREIGHT COST adjustment PRIOR to shipping.
+50 -->Plus shipping and handling.
+51 -->Plus state sales tax.
+52 -->Date and Time:
+53 -->Invoice number:
+54 -->Item
+55 -->Details:
+56 -->Shipping Total:
+57 -->Grand Total:
+58 -->Address:
+59 -->City:
+60 -->State:
+61 -->Zip:
+62 (Changing this not recommended) -->Subject:
+63 -->each
+64 -->The following products have NOT been purchased.
+65 -->Please call us with your credit card number 310-715-6600.
+66 -->Domain of customer:
+67 -->I.P. Address of customer:
+68 -->PAID
+69 -->NOT PAID
+70 -->Sub Total:
+71 -->Secure Online Check Draft
+72 -->Searching for:
+73 -->Image:
+74 -->Description
+75 -->Price:
+76 -->Sorry, the category:
+77 -->was not found in the file:
+78 -->Sorry, no match for keywords:
+79 -->Items
+80 -->Home
+81 -->View Cart - Checkout
+82 -->Total
+83 -->This is a message that you can display after someone has made a purchase via the auxiliary payment option in Personal Variable #62.<BR>Customize this message with lang.dat #83.
+84 (authorize.net text link) -->Click here to complete your transaction!!
+85 -->Browser and OS:
+86 -->Click to continue to the secure server.
+87 -->
+88 (Empty Cart Button) -->https://www.sorbentsystems.com/images/empty-entire-cart-btn.png
+89 -->Are you sure you want to empty your entire cart?
+90 -->Company Name:
+91 -->Category:
+92 -->Method:
+93 (Changing this not recommended) -->any_words
+94 (Changing this not recommended) -->all_words
+95 (Changing this not recommended) -->phrase
+96 -->Price Range:
+97 -->COD - Cash On Delivery
+98 -->Thank you for your purchase! These products will be shipped to you COD.
+99 -->Please indicate any notes or special shipping instructions in the box below.
+100 -->Your item has been added to your shopping cart.
+101 -->Click OK to view your shopping cart.\nClick CANCEL to continue shopping.
+102 -->COD Charge:
+103 -->Plus COD charges if shipping COD.
+104 --><br>Please enter BILLING ADDRESS:
+105 -->Same as Shipping
+106 -->Sorry, could not find your database file at this location:
+107 -->Sorry, this item is out of stock.
+108 -->Webstore discount:
+109 -->Dear
+110 -->Thank you for your order!
+111 (footer) -->
+112 -->Stock#
+113 -->of
+114 (header) -->
+115 -->Enter coupon or gift certificate number.
+116 -->Coupon/Gift Certificate Discount:
+117 -->Remote Hosting
+118 -->Welcome! Login to your remote hosting account.
+119 -->LOGIN
+120 -->Welcome to 
+121 -->account management.
+122 -->Upload a file:
+123 -->UPLOAD THIS FILE(S)
+124 -->Files currently in your directory:
+125 -->File name:
+126 -->File size:
+127 -->Last Modified: (d/h/m)
+128 -->DELETE
+129 -->VIEW
+130 -->Empty
+131 -->Total files:
+132 -->Total bytes of space used:
+133 -->Maximum space:
+134 -->Upload vars.dat and lang.dat
+135 -->Sorry, either that user name does not exist, or the password is incorrect.
+136 -->Please go back and try again
+137 -->RETURN TO ACCOUNT MANAGEMENT
+138 -->Technical Support
+139 (mall footer) -->
+140 -->Username:
+141 -->Password: 
+142 -->Current Directory:
+143 -->UP
+144 -->Make Dir
+145 -->Total Directories:
+146 (Coupon ENTER Button) -->
+147 -->[Cart Test]
+148 (Purchase Button) -->https://www.sorbentsystems.com/images/checkout-btn.png  
+149 -->Next
+150 -->Previous
+151 -->state
+152 -->Pending Order Notice
+153 -->This is a Pending Order Notice. The customer has not submitted their credit card number yet. Wait for order confirmation from the credit card processor.
+154 -->Auxiliary Real-Time Credit Card Processor Payment Option
+155 -->CHECK ALL
+156 -->Item:             Details:                  Quantity:    Each:    Item Total:
+157 (Email Receipt Tables item separator) --> - -
+158 -->Various items in shopping cart with invoice number:
+159 -->There was an error with your shipping address. For sales tax purposes you selected that you are a resident of
+160 -->However, in your shipping address you selected
+161 -->Please go back and select the correct sales tax location.
+162 -->Sorry, we don't accept orders from an email address that contains the following domain or extension:
+163 -->Please go back and provide a different email address.
+164 (Database display jump link button) -->GO
+165 -->Second Auxiliary Real-Time Credit Card Processor Payment Option
+166 -->Please go back and enter a proper email address. A proper email address has a username, a domain and an extension. Example: yourname@domain.com
+167 -->Shopping Cart Summary
+168 -->Items in basket:
+169 -->Subtotal:
+170 (Header of summary page) -->
+171 (Footer of summary page)  -->
+172 -->Products will be shipped only to your credit card's billing address.
+173 -->This item is nearly out of stock. In stock remaining:
+174 -->Confirm Email Address:
+175 -->Your email addresses did not match. Please go back and confirm you have entered your correct email address in both email address fields.
+176 -->You have reached the Maximum Order amount allowed. If you wish to place an order this large, please call us directly.
+177 (On shipping address page) --><b>I have read and agree to be bound by the <A HREF="https://www.sorbentsystems.com/terms_and_conditions.html" TARGET=_blank>Terms and Conditions</A></b><br>  <b>(Please note: we offer packaging samples to test before you buy - <a href="https://www.sorbentsystems.com/samplerequest.html" TARGET=blank>Sample Request Form</a>)</b>
+178 (Echoed in email receipt) -->Customer has read and agreed to be bound by the Terms and Conditions as set forth in:|https://www.sorbentsystems.com/terms_and_conditions.html
+179 (Message if they fail to checkmark TOS checkbox) -->Sorry, you must first read and agree to be bound by the <A HREF="https://www.sorbentsystems.com/terms_and_conditions.html" TARGET=_blank>Terms and Conditions</A> before you can place an order. After you have read it, click the back button in your browser and checkmark the checkbox.
+180 -->This item is on backorder and shipping may be delayed.
