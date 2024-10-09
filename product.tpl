@@ -14,7 +14,22 @@
 						<?php } ?>
 					</div>
 
-					<!-- PREVNEXT BUTTONS TOP -->
+					
+				<div class="prevnext <?php echo $this->config->get('clearshop_prevnext_mode'); ?>">
+					<ul class="pager">
+						<?php if (isset($prev_url)) { ?>
+						<li class="previous">
+							<a href="<?php echo $prev_url; ?>" title="<?php echo $prev_title;?>" class="tooltp"><i class="icon-caret-left"></i><span class="name"><?php echo $prev_title;?></span><span class="dir"><?php echo $this->language->get('text_prev'); ?></span></a>
+						</li>
+						<?php } ?>
+						<?php if (isset($next_url)) { ?>
+						<li class="next">
+							<a href="<?php echo $next_url; ?>" title="<?php echo $next_title;?>" class="tooltp"><i class="icon-caret-right"></i><span class="name"><?php echo $next_title;?></span><span class="dir"><?php echo $this->language->get('text_next'); ?></span></a>
+						</li>
+						<?php } ?>
+					</ul>
+				</div>
+			
 
 					<div id="notification"></div>
 
@@ -74,6 +89,26 @@
 
 									<div class="span<?php echo $spanval1; ?> leftcol">
 
+
+			<style type="text/css">
+					.preorder_note {
+						text-align: center;
+ 						font-size: medium; 
+						padding: 10px; 
+						margin: 10px 0; 
+						border-radius: 5px; 
+						background-color: #<?php echo $custom_background_color; ?>; 
+						color: #<?php echo $custom_text_color; ?>;
+						border-color: #<?php echo $custom_border_color; ?>;
+					}
+					<?php if(isset($po_custom_css)) {
+							echo $po_custom_css;
+					} ?>
+				</style>
+   <?php if(isset($preorder_product) && $preorder_product && isset($preorder_date_note) && !empty($preorder_date_note)) { ?>
+  		<div class="alert alert-info preorder_note"><i class="fa fa-info-circle"></i> <?php $find = array("{preorder_date}","{preorder_note}"); $pr_date = (isset($preorder_date) && $preorder_date !==0) ? date_format(date_create($preorder_date),$date_format_short) : ''; $replace = array($pr_date, $preorder_note); echo str_replace($find, $replace, $preorder_date_note) ?></div>
+   <?php } ?> 
+			
 										<?php if ($thumb || $images) { ?>
 											<?php if ($thumb) { ?>
 												<div class="image">
@@ -161,6 +196,27 @@
 															<span class="price-normal"><?php 
 			
 															echo $price; ?></span>
+
+															<span class="multiplier" style='display:none;'><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															echo $case_quantity; ?></span>
+
+															<span class="total-units"><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															$default_unit = $case_quantity;
+
+															// Check if default_unit is 1 or not
+															$unit_text = $default_unit === 1 ? "unit" : "units";
+
+															echo "(" . number_format($default_unit) . " $unit_text)"; 
+														    ?></span>
+
 															<?php
 															$price_trimmed = ltrim($price, '$');
 
@@ -193,6 +249,28 @@
 															<span class="price-normal"><?php 
 			
 															echo $price; ?></span>
+
+															<span class="multiplier" style='display:none;'><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															echo $case_quantity; ?></span>
+
+															<span class="total-units"><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															$default_unit = $case_quantity;
+
+															// Check if default_unit is 1 or not
+															$unit_text = $default_unit === 1 ? "unit" : "units";
+
+															echo "(" . number_format($default_unit) . " $unit_text)"; 
+														    ?></span>
+
+                                                    
 															<?php
 															$price_trimmed = ltrim($price, '$');
 
@@ -227,15 +305,27 @@
 															echo $price; ?></span>
 														<?php } ?>
 													<?php } else { ?>
-														<span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
+														<span class="price-old">
+				
+					<span class="price-container"><?php echo $price; ?></span>
+				
+			</span> <span class="price-new"><?php echo $special; ?></span>
 													<?php } ?>
 
 													<?php if ($tax) { ?>
-														<div class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></div>
+														<div class="price-tax"><?php echo $text_tax; ?> 
+				
+					<span><?php echo $tax; ?></span>
+				
+			</div>
 													<?php } ?>
 
 													<?php if ($points) { ?>
-														<div class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></div>
+														<div class="reward"><small><?php echo $text_points; ?> 
+				
+					<span><?php echo $points; ?></span>
+				
+			</small></div>
 													<?php } ?>
 
 													<?php if ($discounts) { ?>
@@ -303,7 +393,14 @@
 
 												<?php } ?>
 
-												<!-- <div class="stock"><?php echo $stock; ?></div> -->
+												<!-- <div class="stock">
+			<?php if ($quantity <= 0) { ?>
+			<span class="outstock"><i class="icon-remove"></i> <?php echo $stock; ?></span>
+			<?php } else { ?>
+			<?php $this->language->load('module/clearshop'); ?>
+			<span class="instock"><i class="icon-ok"></i> <?php echo $this->language->get('text_in_stock'); ?> <span class="stockqty">(<?php echo $stock; ?>)</span></span>
+			<?php } ?>
+			</div> -->
 
 												<div class="description">
 
@@ -606,7 +703,9 @@
 													
 															<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
 															
-															<input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+															<input type="button" value="<?php echo $button_cart; ?>" 
+			id="button-cart" class="button <?php if ($quantity <= 0) { echo 'disabled" disabled="disabled'; } ?>" 
+			 />
 															
 															<?php if ($minimum > 1) { ?>
 																<small class="minimum"><?php echo $text_minimum; ?></small>
@@ -641,6 +740,11 @@
 												</div>
 												-->
 
+<?php if ($product_tabs_5) { ?>
+					<?php foreach($product_tabs_5 as $product_tab_5) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_5['tab_id'];?>" class="tab-content"><?php echo $product_tab_5['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
 												<?php if ($tags) { ?>
 													<div class="tags">
 														<b><?php echo $text_tags; ?></b>
@@ -668,7 +772,9 @@
 														</div>
 															<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
 															
-															<input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+															<input type="button" value="<?php echo $button_cart; ?>" 
+			id="button-cart" class="button <?php if ($quantity <= 0) { echo 'disabled" disabled="disabled'; } ?>" 
+			 />
 															
 															<?php if ($minimum > 1) { ?>
 																<small class="minimum"><?php echo $text_minimum; ?></small>
@@ -678,6 +784,11 @@
 
 													<div class="links">
 													
+<?php if ($product_tabs_3) { ?>
+					<?php foreach($product_tabs_3 as $product_tab_3) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_3['tab_id'];?>"><?php echo $product_tab_3['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
 														<?php if ($review_status) { ?>
 															<span class="review"><a onclick="$('a[href=\'#tab-review\']').trigger('click'); $('html, body').animate({scrollTop: $('#tabs').offset().top}, 800);" rel="tooltip"title="<?php echo $text_write; ?>" class="tooltp"><img src="catalog/view/theme/clearshop/images/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" /> <?php echo $reviews; ?></a></span>
 														<?php } ?>
@@ -701,6 +812,11 @@
 
 													</div>
 
+<?php if ($product_tabs_5) { ?>
+					<?php foreach($product_tabs_5 as $product_tab_5) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_5['tab_id'];?>" class="tab-content"><?php echo $product_tab_5['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
 													<?php if ($tags) { ?>
 														<div class="tags">
 															<b><?php echo $text_tags; ?></b>
@@ -742,6 +858,11 @@
 
 					<div id="tabs" class="htabs">
 						<a href="#tab-description"><?php echo $tab_description; ?> <i class="icon-caret-down"></i></a>
+<?php if ($product_tabs_2) { ?>
+					<?php foreach($product_tabs_2 as $product_tab_2) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_2['tab_id'];?>"><?php echo $product_tab_2['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
 						<?php if ($attribute_groups) { ?>
 						<a href="#tab-attribute"><?php echo $tab_attribute; ?> <i class="icon-caret-down"></i></a>
 						<?php } ?>
@@ -749,7 +870,17 @@
 						<a href="#tab-review"><?php echo $tab_review; ?> <i class="icon-caret-down"></i></a>
 						<?php } ?>
 					</div>
+<?php if ($product_tabs_1) { ?>
+					<?php foreach($product_tabs_1 as $product_tab_1) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_1['tab_id'];?>" class="tab-content"><?php echo $product_tab_1['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
 					<div id="tab-description" class="tab-content"><?php echo $description; ?></div> <!-- #tab-description -->
+<?php if ($product_tabs_2) { ?>
+					<?php foreach($product_tabs_2 as $product_tab_2) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_2['tab_id'];?>" class="tab-content"><?php echo $product_tab_2['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
 					<?php if ($attribute_groups) { ?>
 						<div id="tab-attribute" class="tab-content">
 							<section class="product-atrributes">
@@ -777,6 +908,11 @@
 							</section>
 						</div> <!-- #tab-attribute -->
 					<?php } ?>
+<?php if ($product_tabs_3) { ?>
+					<?php foreach($product_tabs_3 as $product_tab_3) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_3['tab_id'];?>" class="tab-content"><?php echo $product_tab_3['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
 					<?php if ($review_status) { ?>
 						<div id="tab-review" class="tab-content">
 							<div class="row-fluid">
@@ -835,7 +971,22 @@
 
 				</section>
 
-				<!-- PREVNEXT BUTTONS BOTTOM -->
+				
+				<div class="prevnext compact">
+					<ul class="pager">
+						<?php if (isset($prev_url)) { ?>
+						<li class="previous">
+							<a href="<?php echo $prev_url; ?>" title="<?php echo $prev_title;?>" class="tooltp"><i class="icon-caret-left"></i><span class="name"><?php echo $prev_title;?></span><span class="dir"><?php echo $this->language->get('text_prev'); ?></span></a>
+						</li>
+						<?php } ?>
+						<?php if (isset($next_url)) { ?>
+						<li class="next">
+							<a href="<?php echo $next_url; ?>" title="<?php echo $next_title;?>" class="tooltp"><i class="icon-caret-right"></i><span class="name"><?php echo $next_title;?></span><span class="dir"><?php echo $this->language->get('text_next'); ?></span></a>
+						</li>
+						<?php } ?>
+					</ul>
+				</div>
+			
 
 			</div>
 		
