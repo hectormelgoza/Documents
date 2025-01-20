@@ -196,6 +196,27 @@
 															<span class="price-normal"><?php 
 			
 															echo $price; ?></span>
+
+															<span class="multiplier" style='display:none;'><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															echo $case_quantity; ?></span>
+
+															<span class="total-units"><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															$default_unit = $case_quantity;
+
+															// Check if default_unit is 1 or not
+															$unit_text = $default_unit === 1 ? "unit" : "units";
+
+															echo "(" . number_format($default_unit) . " $unit_text)"; 
+														    ?></span>
+
 															<?php
 															$price_trimmed = ltrim($price, '$');
 
@@ -228,6 +249,28 @@
 															<span class="price-normal"><?php 
 			
 															echo $price; ?></span>
+
+															<span class="multiplier" style='display:none;'><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															echo $case_quantity; ?></span>
+
+															<span class="total-units"><?php 
+															$price_trimmed = ltrim($price, '$');
+
+															preg_match('#\((.*?)\/#', $heading_title, $match);			
+															$case_quantity = (int) str_replace(',', '', $match[1]);
+															$default_unit = $case_quantity;
+
+															// Check if default_unit is 1 or not
+															$unit_text = $default_unit === 1 ? "unit" : "units";
+
+															echo "(" . number_format($default_unit) . " $unit_text)"; 
+														    ?></span>
+
+                                                    
 															<?php
 															$price_trimmed = ltrim($price, '$');
 
@@ -652,7 +695,7 @@
 														<div class="input-qty">
 															<div class="qty-minus"><i class="icon-minus"></i></div>
 																<div class="qty-input-div">
-																	<input id="qty-input"  type="text" name="quantity" value="<?php echo $minimum; ?>" class="input-mini" />
+																	<input id="qty-input" title="product quantity value" type="text" name="quantity" value="<?php echo $minimum; ?>" class="input-mini" />
 																</div>
 															<div class="qty-plus"><i class="icon-plus"></i></div>
 														</div>
@@ -723,7 +766,7 @@
 														<div class="input-qty">
 															<div class="qty-minus"><i class="icon-minus"></i></div>
 																<div class="qty-input-div">
-																	<input id="qty-input"  type="text" name="quantity" value="<?php echo $minimum; ?>" class="input-mini" />
+																	<input id="qty-input" title="product quantity value" type="text" name="quantity" value="<?php echo $minimum; ?>" class="input-mini" />
 																</div>
 															<div class="qty-plus"><i class="icon-plus"></i></div>
 														</div>
