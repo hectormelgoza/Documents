@@ -109,14 +109,14 @@
 								<?php } ?> <!-- subcategories END -->
 
 							</div>
-
+                            <div style="padding-top: 12px;" id="sortSection"></div>
 
 							<!-- Products -->
 
 							<?php if ($products) { ?>
 
 								<!-- Grid/Lis view, filters -->
-
+                                
 								<div class="product-filter">
 
 									<div class="options">
@@ -134,22 +134,21 @@
 									</div> <!-- .options -->
 
 									
-									<div class="list-options"> 
-
-										<div class="sort">
+									<div class="sort">
 											
-											<label for="sort-select"><?php echo $text_sort; ?></label>
-											<select id="sort-select" onchange="location = this.value;">
-												<?php foreach ($sorts as $sorts) { ?>
-												<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-												<option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
-												<?php } else { ?>
-												<option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
-												<?php } ?>
-												<?php } ?>
-											</select>
+										<label for="sort-select"><?php echo $text_sort; ?></label>
+										<select id="sort-select" onchange="location = this.value + '#sortSection';">
+											<?php foreach ($sorts as $sorts) { ?>
+											<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+											<option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+											<?php } else { ?>
+											<option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+											<?php } ?>
+											<?php } ?>
+										</select>
 
-										</div> <!-- .sort -->
+									</div> <!-- .sort -->
+
 
 										<div class="limit">
 
@@ -301,5 +300,25 @@
 		</div> <!-- #maintop-container -->
 	
 	<?php echo $content_bottom; ?>
+<script>
+    window.onload = function() {
+    var select = document.getElementById("sort-select");
 
+    // Ensure the select element exists before proceeding
+    if (select) {
+        var currentUrl = window.location.href;
+
+        // Iterate through the options to find a match
+        for (var i = 0; i < select.options.length; i++) {
+            if (select.options[i].value === currentUrl) {
+                select.selectedIndex = i;
+                break;
+            }
+        }
+    } else {
+        console.error('Select element with id "sort-select" not found.');
+    }
+};
+
+</script>
 <?php echo $footer; ?>
