@@ -111,14 +111,14 @@
 								<?php } ?> <!-- subcategories END -->
 
 							</div>
-
+                            <div style="padding-top: 12px;" id="sortSection"></div>
 
 							<!-- Products -->
 
 							<?php if ($products) { ?>
 
 								<!-- Grid/Lis view, filters -->
-
+                                
 								<div class="product-filter">
 
 									<div class="options">
@@ -136,30 +136,25 @@
 									</div> <!-- .options -->
 
 									
-									<div class="list-options"> 
-
-										<div class="sort">
-
+									<div class="sort">
 											
+										<label for="sort-select"><?php echo $text_sort; ?></label>
+										<select id="sort-select" onchange="location = this.value + '#sortSection';">
+											<?php foreach ($sorts as $sorts) { ?>
+											<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+											<option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+											<?php } else { ?>
+											<option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+											<?php } ?>
+											<?php } ?>
+										</select>
 
-											<label for="sort-select"><?php echo $text_sort; ?></label>
-											<select id="sort-select" onchange="location = this.value;">
-												<?php foreach ($sorts as $sorts) { ?>
-												<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-												<option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
-												<?php } else { ?>
-												<option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
-												<?php } ?>
-												<?php } ?>
-											</select>
+									</div> <!-- .sort -->
 
-										</div> <!-- .sort -->
 
 										<div class="limit">
 
-											
-
-											<label for="limit-select"><?php echo $text_limit; ?></label>
+                                            <label for="limit-select"><?php echo $text_limit; ?></label>
 											<select id="limit-select" onchange="location = this.value;">
 												
 												<?php foreach ($limits as $limits) { ?>
@@ -210,7 +205,8 @@
 
 													<?php if ($product['thumb']) { ?>
 														<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" 
-			title="<?php echo isset($product['title_tag']) ? $product['title_tag'] : $product['name'] ; ?>" alt="<?php echo isset($product['alt_tag']) ? $product['alt_tag'] : $product['name'] ; ?>" width="190" height="190"/></a></div>
+			title="<?php echo $product['title_tag']; ?>" alt="<?php echo $product['alt_tag']; ?>"
+			 /></a></div>
 													<?php } ?>
 
 													<?php if ($product['price'] && $product['special']) { ?>
@@ -248,7 +244,20 @@
 														<div class="rating"><img src="catalog/view/theme/clearshop/images/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
 													<?php } ?>
 
-													<div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
+													<div class="cart">
+			<?php if ($product['quantity'] <= 0) { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?> />
+				<span class="outstock"><?php echo $this->language->get('text_out_stock'); ?></span>
+			<?php } else { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			<?php } ?>
+			</div>
+
+													<div class="links">
+														<span class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');" title="<?php echo $button_wishlist; ?>" class="tooltp" ><i class="icon-heart"></i></a></span>
+														
+														<span class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');" title="<?php echo $button_compare; ?>" class="tooltp" ><i class="icon-plus"></i></a></span>
+													</div>
 
 												</div> <!-- .inner2 -->
 												
@@ -305,5 +314,25 @@
 		</div> <!-- #maintop-container -->
 	
 	<?php echo $content_bottom; ?>
+<script>
+    window.onload = function() {
+    var select = document.getElementById("sort-select");
 
+    // Ensure the select element exists before proceeding
+    if (select) {
+        var currentUrl = window.location.href;
+
+        // Iterate through the options to find a match
+        for (var i = 0; i < select.options.length; i++) {
+            if (select.options[i].value === currentUrl) {
+                select.selectedIndex = i;
+                break;
+            }
+        }
+    } else {
+        console.error('Select element with id "sort-select" not found.');
+    }
+};
+
+</script>
 <?php echo $footer; ?>
