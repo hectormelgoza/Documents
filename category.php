@@ -284,6 +284,7 @@ class ControllerProductCategory extends Controller {
 				'text'  => $this->language->get('text_price_asc'),
 				'value' => 'p.price-ASC',
 				'href'  => 'https://www.impakcorporation.com/product/category/' . strtolower(str_replace(' ', '-', $category_info['name'])) . '/sorted/&path=' . $this->request->get['path'] . '&sort=p.price&order=ASC'  . $url
+                
 			); 
 
 			$this->data['sorts'][] = array(
@@ -318,6 +319,8 @@ class ControllerProductCategory extends Controller {
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
 			);
 			
+             
+
 			$url = '';
 			
 			if (isset($this->request->get['filter'])) {
